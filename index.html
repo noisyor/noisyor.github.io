@@ -3,116 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1815" />
-    <meta name="description" content="Saion Roy is a postdoctoral researcher at Northeastern University working at the intersection of hardware security, machine learning, and energy-efficient computing." />
-    <meta property="og:title" content="Saion Roy — Hardware Security Researcher" />
-    <meta property="og:description" content="Research in hardware security, secure machine learning systems, and energy-efficient computing." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Saion Roy is a postdoctoral researcher at Northeastern University working on hardware security, secure machine learning systems, and efficient computing." />
+    <meta property="og:title" content="Saion Roy" />
+    <meta property="og:description" content="Hardware security and secure machine-learning systems researcher at Northeastern University." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://noisyor.github.io/" />
-    <meta property="og:image" content="https://noisyor.github.io/assets/og.png" />
+    <meta property="og:image" content="https://noisyor.github.io/assets/og-minimal.png" />
     <meta property="og:image:width" content="1731" />
     <meta property="og:image:height" content="909" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://noisyor.github.io/" />
-    <link rel="icon" type="image/jpeg" href="assets/saion-web.jpg" />
-    <link rel="stylesheet" href="assets/css/site.css" />
-    <title>Saion Roy — Hardware Security Researcher</title>
+    <link rel="icon" type="image/png" href="/assets/profile-esserc-24.png" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <title>Saion Roy</title>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" data-header>
-      <div class="nav-shell">
-        <a class="wordmark" href="#home" aria-label="Saion Roy, home"><span class="wordmark-mark" aria-hidden="true">SR</span><span>Saion Roy</span></a>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
-        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-          <a href="#research">Research</a><a href="#publications">Publications</a><a href="#talks">Talks</a><a href="#contact">Contact</a>
-          <a class="nav-cta" href="assets/Saion_Postdoc_CV-2026.pdf" target="_blank" rel="noreferrer">View CV</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-name" href="/">Saion Roy</a>
+        <nav class="site-tabs" aria-label="Primary navigation">
+          <a href="/" aria-current="page">Home</a>
+          <a href="/research.html">Research</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/talks.html">Talks</a>
+          <a href="/cv.html">CV</a>
         </nav>
       </div>
     </header>
 
-    <main id="main">
-      <section id="home" class="hero" aria-labelledby="hero-title">
-        <div class="hero-grid shell">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Hardware security · Secure ML systems</p>
-            <h1 id="hero-title">Designing secure and efficient machine-learning systems from silicon up.</h1>
-            <p class="hero-lede">I’m Saion Roy, a postdoctoral researcher in Electrical and Computer Engineering at Northeastern University. My work connects ML algorithms, accelerator architectures, circuits, and end-to-end system security.</p>
-            <div class="hero-actions"><a class="button button-primary" href="#research">Explore my research</a><a class="button button-secondary" href="mailto:sai.roy@northeastern.edu">Get in touch</a></div>
-            <dl class="hero-facts" aria-label="Current position and location">
-              <div><dt>Current role</dt><dd>Postdoctoral Research Associate</dd></div>
-              <div><dt>Based in</dt><dd>Boston, Massachusetts</dd></div>
-            </dl>
-          </div>
-          <div class="portrait-wrap reveal" data-delay="1">
-            <div class="portrait-frame"><img src="assets/saion-web.jpg" alt="Portrait of Saion Roy" width="933" height="1400" fetchpriority="high" /></div>
-            <p class="portrait-note"><span aria-hidden="true"></span> Northeastern University · ECE</p>
+    <main id="main" class="container home-page">
+      <section class="intro-grid" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="kicker">Postdoctoral Researcher · Northeastern University</p>
+          <h1 id="page-title">Saion Roy</h1>
+          <p class="lead">I study secure and energy-efficient machine-learning systems, with a focus on how algorithms, computer architecture, and circuit implementation jointly shape the hardware attack surface.</p>
+          <p>My current work spans hardware-aware ML security, side-channel analysis, fault-based attacks, and secure accelerator co-design.</p>
+          <div class="contact-row" aria-label="Contact and profiles">
+            <a href="mailto:sai.roy@northeastern.edu">Email</a>
+            <a href="https://coe.northeastern.edu/people/roy-saion/">Northeastern profile</a>
+            <a href="https://github.com/noisyor">GitHub</a>
+            <a href="https://www.linkedin.com/in/saion-roy-6a050587/">LinkedIn</a>
           </div>
         </div>
-      </section>
-
-      <section class="signal-strip" aria-label="Research themes"><div class="shell signal-grid"><span>Hardware-aware ML security</span><span>In-memory computing</span><span>Energy–accuracy–security trade-offs</span></div></section>
-
-      <section id="research" class="section shell" aria-labelledby="research-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Research</p><h2 id="research-title">Security across the computing stack</h2>
-          <p>I study how algorithm mapping, microarchitecture, and circuit implementation choices shape both the efficiency and attack surface of machine-learning systems.</p>
-        </div>
-        <div class="research-grid">
-          <article class="research-card reveal"><span class="card-index">01</span><h3>Hardware-aware ML security</h3><p>Studying backdoors and fault attacks that emerge when neural networks meet real memories, accelerators, and execution platforms.</p></article>
-          <article class="research-card reveal" data-delay="1"><span class="card-index">02</span><h3>Side-channel security</h3><p>Building practical attacks and defenses across devices and modalities, from shared system caches to physical power and EM traces.</p></article>
-          <article class="research-card reveal" data-delay="2"><span class="card-index">03</span><h3>Secure accelerator co-design</h3><p>Treating security and privacy as first-class constraints alongside energy, accuracy, performance, and implementation cost.</p></article>
-        </div>
-        <div class="pathway reveal">
-          <div><p class="eyebrow">Background</p><h3>From circuits to system security</h3></div>
-          <ol class="timeline">
-            <li><span>2024 — present</span><strong>Northeastern University</strong><p>Postdoctoral Research Associate, Electrical and Computer Engineering</p></li>
-            <li><span>2018 — 2024</span><strong>University of Illinois Urbana-Champaign</strong><p>Ph.D., Electrical and Computer Engineering</p></li>
-            <li><span>2013 — 2018</span><strong>IIT Kharagpur</strong><p>B.Tech. and M.Tech., Electronics and Electrical Communication Engineering</p></li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="publications" class="section section-ink" aria-labelledby="publications-title">
-        <div class="shell">
-          <div class="section-heading section-heading-light reveal"><p class="eyebrow">Selected publications</p><h2 id="publications-title">Research in circuits, architecture, and security</h2></div>
-          <div class="publication-list">
-            <article class="publication reveal"><div class="publication-meta"><span>CCS</span><span>2026</span></div><h3>SLAC: Access-Driven CPU-to-GPU Side-channel Attacks via System-Level Cache on Apple Silicon</h3><p>T. Xu, S. K. Roy, R. Ding, A. A. Ding, and Y. Fei · To appear</p></article>
-            <article class="publication reveal"><div class="publication-meta"><span>ICCAD</span><span>2026</span></div><h3><a href="https://github.com/noisyor/ROBBIN-Rowhammer-Based-Backdoor-Injection-during-Inference">ROBBIN: Rowhammer-Based Backdoor Injection during Inference</a></h3><p>S. K. Roy, Y. Wang, A. A. Ding, and Y. Fei · To appear</p></article>
-            <article class="publication reveal"><div class="publication-meta"><span>TCAD</span><span>2026</span></div><h3><a href="https://doi.org/10.1109/TCAD.2026.3711060">Comprehending the Energy-Accuracy-Security Trade-offs in Embedded Non-Volatile In-Memory Computing Architectures</a></h3><p>S. K. Roy and N. Shanbhag</p></article>
-            <article class="publication reveal"><div class="publication-meta"><span>AsiaCCS</span><span>2026</span></div><h3><a href="https://doi.org/10.1145/3779208.3805969">Attack from Shadows: Unsupervised Side-channel Transfer Learning across Devices and Modalities</a></h3><p>S. K. Roy, Z. Zhang, A. A. Ding, and Y. Fei</p></article>
-            <article class="publication reveal publication-more" data-more-publication hidden><div class="publication-meta"><span>IEDM</span><span>2024</span></div><h3><a href="https://ieeexplore.ieee.org/abstract/document/10873582">The Energy-Accuracy-Security Trade-off in Resistive In-memory Architectures</a></h3><p>S. K. Roy and N. Shanbhag</p></article>
-            <article class="publication reveal publication-more" data-more-publication hidden><div class="publication-meta"><span>ICCAD</span><span>2024</span></div><h3><a href="https://dl.acm.org/doi/10.1145/3676536.3676685">On the Security Vulnerabilities of MRAM-based In-Memory Computing Architectures against Model Extraction Attacks</a></h3><p>S. K. Roy and N. Shanbhag</p></article>
-            <article class="publication reveal publication-more" data-more-publication hidden><div class="publication-meta"><span>JSSC</span><span>2024</span></div><h3><a href="https://ieeexplore.ieee.org/document/10642976">Compute SNDR-boosted 22nm MRAM-based In-memory Computing Macro using Statistical Error Compensation</a></h3><p>S. K. Roy, H.-M. Ou, M. Ahmed, P. Deaville, B. Zhang, N. Verma, P. Hanumolu, and N. Shanbhag</p></article>
-            <article class="publication reveal publication-more" data-more-publication hidden><div class="publication-meta"><span>JxCDC</span><span>2024</span></div><h3><a href="https://ieeexplore.ieee.org/document/10478888">Energy-Accuracy Trade-offs for Resistive In-Memory Computing Architectures</a></h3><p>S. K. Roy and N. Shanbhag</p></article>
-          </div>
-          <button class="text-button" type="button" data-publications-toggle aria-expanded="false"><span>Show all publications</span><span aria-hidden="true">↓</span></button>
-        </div>
-      </section>
-
-      <section id="talks" class="section shell" aria-labelledby="talks-title">
-        <div class="section-heading reveal"><p class="eyebrow">Talks</p><h2 id="talks-title">Recent invited presentations</h2></div>
-        <div class="talk-list">
-          <article class="talk reveal"><time datetime="2026">2026</time><div><h3>Attack from Shadows: Unsupervised Side-channel Transfer Learning across Devices and Modalities</h3><p>ACM AsiaCCS · Bangalore, India</p></div></article>
-          <article class="talk reveal"><time datetime="2025-04">Apr 2025</time><div><h3>Energy-Accuracy-Security Trade-offs in Resistive In-Memory Computing Architectures</h3><p>New England Hardware Security Day · MIT</p></div></article>
-          <article class="talk reveal"><time datetime="2025-03">Mar 2025</time><div><h3>Energy-Accuracy-Security Trade-offs in Resistive In-Memory Computing Architectures</h3><p>SRC JUMP 2.0 COCOSYS Annual Review · Georgia Tech</p></div></article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section" aria-labelledby="contact-title">
-        <div class="shell contact-grid reveal">
-          <div><p class="eyebrow">Contact</p><h2 id="contact-title">Let’s talk about secure and efficient computing.</h2></div>
-          <div class="contact-links">
-            <a href="mailto:sai.roy@northeastern.edu"><span>Email</span><strong>sai.roy@northeastern.edu</strong></a>
-            <a href="https://coe.northeastern.edu/people/roy-saion/"><span>Profile</span><strong>Northeastern University</strong></a>
-            <a href="https://github.com/noisyor"><span>Code</span><strong>GitHub · noisyor</strong></a>
-            <a href="https://www.linkedin.com/in/saion-roy-6a050587/"><span>Network</span><strong>LinkedIn</strong></a>
-          </div>
-        </div>
+        <figure class="profile-photo">
+          <img src="/assets/profile-esserc-24.png" alt="Saion Roy" width="1254" height="1254" />
+        </figure>
       </section>
     </main>
 
-    <footer class="site-footer"><div class="shell footer-grid"><p>© <span data-year></span> Saion Roy</p><p>Hardware security · Machine learning · Efficient computing</p><a href="#home">Back to top ↑</a></div></footer>
-    <script src="assets/js/site.js" defer></script>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Saion Roy</span>
+        <a href="mailto:sai.roy@northeastern.edu">sai.roy@northeastern.edu</a>
+      </div>
+    </footer>
   </body>
 </html>
