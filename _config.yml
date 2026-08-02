@@ -13,9 +13,10 @@
 
 title: "Saion Roy"
 email: "sai.roy@northeastern.edu"
-description: "Postdoctoral Researcher at Northeastern University"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://saionroy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+description: "Hardware security researcher at Northeastern University"
+baseurl: ""
+url: "https://noisyor.github.io"
+repository: "noisyor/noisyor.github.io"
 
 # Remote theme
 # See: https://github.com/mmistakes/minimal-mistakes
