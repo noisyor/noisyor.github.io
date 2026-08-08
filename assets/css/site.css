@@ -107,6 +107,9 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 .publication-list p { margin: 6px 0 0; font-size: .9rem; }
 .publication-list .authors { color: #424951; }
 .publication-list .venue { color: var(--muted); font-style: italic; }
+.publication-list .publication-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 9px; margin-top: 10px; font-style: normal; }
+.publication-links a { font-size: .86rem; font-weight: 550; }
+.publication-links span { color: var(--border); }
 
 .talk-list { margin: 0; padding: 0; border-top: 1px solid var(--border); list-style: none; }
 .talk-list li { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--border); }
