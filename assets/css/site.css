@@ -108,7 +108,11 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 .publication-list .authors { color: #424951; }
 .publication-list .venue { color: var(--muted); font-style: italic; }
 .publication-list .publication-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 9px; margin-top: 10px; font-style: normal; }
-.publication-links a { font-size: .86rem; font-weight: 550; }
+.publication-links a { display: inline-flex; align-items: center; gap: 6px; font-size: .86rem; font-weight: 550; }
+.publication-links a::before { display: inline-block; flex: 0 0 auto; color: currentColor; }
+.publication-links a:not([href*="github.io"]):not([href*="github.com"])::before { content: ""; width: 10px; height: 13px; border: 1px solid currentColor; border-radius: 1px; background: linear-gradient(currentColor, currentColor) 2px 4px / 6px 1px no-repeat, linear-gradient(currentColor, currentColor) 2px 7px / 6px 1px no-repeat, linear-gradient(currentColor, currentColor) 2px 10px / 4px 1px no-repeat; }
+.publication-links a[href*="github.io"]::before { content: ""; width: 12px; height: 12px; border: 1px solid currentColor; border-radius: 50%; background: linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat, linear-gradient(90deg, transparent 44%, currentColor 44% 56%, transparent 56%) center / 100% 100% no-repeat; }
+.publication-links a[href*="github.com"]::before { content: "</>"; font: 650 .66rem/1 ui-monospace, "SFMono-Regular", Consolas, monospace; letter-spacing: -.08em; }
 .publication-links span { color: var(--border); }
 
 .talk-list { margin: 0; padding: 0; border-top: 1px solid var(--border); list-style: none; }
