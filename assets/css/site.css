@@ -123,7 +123,7 @@ h1, h2, h3, h4 { font-weight: 500; }
 .publication-list li { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 32px; padding: 24px 0; border-bottom: 1px solid var(--border); }
 .publication-list li > .venue-tag { grid-column: 1; grid-row: 1; justify-self: start; align-self: start; margin: 4px 0 0; }
 .publication-list li > :not(.venue-tag):not(.entry-meta) { grid-column: 2; }
-.publication-list li > .entry-meta { grid-column: 1; grid-row: 1 / span 2; align-self: start; display: grid; justify-items: start; gap: 5px; padding-top: 4px; }
+.publication-list li > .entry-meta { grid-column: 1; grid-row: 1 / span 4; align-self: start; display: grid; justify-items: start; gap: 5px; padding-top: 4px; }
 .entry-meta .venue-tag { margin: 0; }
 .entry-meta time { color: var(--muted); font-size: var(--text-xs); }
 .publication-list h3 { margin: 0; font-family: inherit; font-size: var(--text-lg); font-weight: 500; line-height: 1.45; }
