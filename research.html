@@ -16,110 +16,233 @@
       <header class="page-heading research-intro"><p class="kicker">Research</p><h1>Research and projects</h1><p>This research connects machine-learning security with integrated-circuit and system design, spanning algorithms, computer architecture, and hardware implementation.</p></header>
 
       <nav class="area-overview" aria-label="Research areas">
-        <a class="area-card" href="#area-envm-imc"><span class="area-index">Area 01</span><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">4 projects · SEC–MRAM IMC, Crossbar IMC analysis, Parallel-bar IMC analysis, IMC benchmarking</span></a>
+        <a class="area-card" href="#area-envm-imc"><span class="area-index">Area 01</span><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">4 projects · Crossbar IMC analysis, Parallel-bar IMC analysis, SEC–MRAM IMC, IMC benchmarking</span></a>
         <a class="area-card" href="#area-ml-security"><span class="area-index">Area 02</span><strong>Security vulnerabilities of ML accelerators</strong><span class="area-projects">5 projects · ROBBIN, SLAC, EAS-IMC, Attack from Shadows, HOTSPOT</span></a>
       </nav>
 
       <section class="research-area" id="area-envm-imc" aria-labelledby="area-envm-imc-title">
         <header class="area-heading"><p class="kicker">Area 01</p><h2 id="area-envm-imc-title">Energy-efficient eNVM in-memory computing accelerator design</h2><p>This work develops and analyzes energy-efficient hardware for machine learning, including in-memory computing and accelerator architectures. It considers the relationships among circuit non-idealities, energy, accuracy, performance, and security.</p></header>
-        <div class="project-grid">
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/sec-mram-die.webp" alt="Die micrograph of the 22 nm MRAM in-memory computing chip with the IMC core, SEC processor, drivers, ADC column array, and MRAM array outlined" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#compute-sndr-jssc">JSSC 2024</a><a class="venue-tag venue-conference" href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a></div>
-              <h3>SEC–MRAM IMC</h3>
-              <p class="project-summary">Behavioral modeling, circuit design, and measured 22 nm MRAM in-memory-computing silicon with statistical error compensation.</p>
-              <ul class="project-stats"><li><strong>2.7–6 dB</strong><span>measured SNDR improvement from SEC</span></li><li><strong>5×</strong><span>energy reduction at iso-SNDR</span></li><li><strong>22 nm</strong><span>measured MRAM prototype</span></li></ul>
-              <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/10642976">Paper</a><span aria-hidden="true">·</span><a href="https://calmyor.github.io/SEC-Enabled-MRAM-IMC/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/calmyor/SEC-Enabled-MRAM-IMC">Code</a></p>
-            </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/crossbar-architecture.webp" alt="Resistive crossbar in-memory computing architecture with a conductance at each input and output line crossing, followed by TIA current sensing and an ADC on every output line" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#crossbar-iscas">ISCAS 2022</a></div>
-              <h3>Crossbar IMC analysis</h3>
+        <figure class="area-figure">
+          <div class="area-figure-scroll">
+            <svg class="area-diagram" viewBox="0 0 1040 456" role="group" aria-labelledby="a1-title">
+              <title id="a1-title">Area 01 overview: model device and array accuracy limits, build measured MRAM silicon, benchmark IMC chips, and extend the energy-accuracy trade-off to security</title>
+              <defs><marker id="a1-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#294e6b" /></marker><marker id="a1-arrow-bridge" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6a4a78" /></marker></defs>
+              <rect x="1" y="1" width="228" height="248" rx="8" fill="#fff" stroke="#dfe3e6" />
+              <text x="115" y="32" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#294e6b">01 · MODEL</text>
+              <text x="115" y="58" font-size="17" font-weight="500" text-anchor="middle" fill="#20242a">Device and array limits</text>
+              <g transform="translate(115 120) scale(1.3)"><line x1="-67" y1="-24" x2="19" y2="-24" stroke="#294e6b" stroke-width="1.5" /><line x1="-67" y1="-8" x2="19" y2="-8" stroke="#294e6b" stroke-width="1.5" /><line x1="-67" y1="8" x2="19" y2="8" stroke="#294e6b" stroke-width="1.5" /><line x1="-67" y1="24" x2="19" y2="24" stroke="#294e6b" stroke-width="1.5" /><line x1="-53" y1="-30" x2="-53" y2="30" stroke="#9aa6b0" stroke-width="1.5" /><line x1="-29" y1="-30" x2="-29" y2="30" stroke="#9aa6b0" stroke-width="1.5" /><line x1="-5" y1="-30" x2="-5" y2="30" stroke="#9aa6b0" stroke-width="1.5" /><line x1="19" y1="-24" x2="19" y2="24" stroke="#294e6b" stroke-width="1.5" /><line x1="19" y1="0" x2="31" y2="0" stroke="#294e6b" stroke-width="1.5" /><circle cx="-53" cy="-24" r="3" fill="#294e6b" /><circle cx="-53" cy="-8" r="3" fill="#294e6b" /><circle cx="-53" cy="8" r="3" fill="#294e6b" /><circle cx="-53" cy="24" r="3" fill="#294e6b" /><circle cx="-29" cy="-24" r="3" fill="#294e6b" /><circle cx="-29" cy="-8" r="3" fill="#294e6b" /><circle cx="-29" cy="8" r="3" fill="#294e6b" /><circle cx="-29" cy="24" r="3" fill="#294e6b" /><circle cx="-5" cy="-24" r="3" fill="#294e6b" /><circle cx="-5" cy="-8" r="3" fill="#294e6b" /><circle cx="-5" cy="8" r="3" fill="#294e6b" /><circle cx="-5" cy="24" r="3" fill="#294e6b" /><rect x="31" y="-16" width="36" height="32" rx="4" fill="#eef2f6" stroke="#294e6b" stroke-width="1.5" /><text x="49" y="4" font-size="11" font-weight="600" text-anchor="middle" fill="#294e6b">ADC</text></g>
+              <text font-size="14" text-anchor="middle" fill="#66707a"><tspan x="115" y="196">Crossbar and parallel-bar</tspan><tspan x="115" dy="19">arrays across MRAM,</tspan><tspan x="115" dy="19">ReRAM, and FeFET</tspan></text>
+              <rect x="271" y="1" width="228" height="248" rx="8" fill="#fff" stroke="#dfe3e6" />
+              <text x="385" y="32" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#294e6b">02 · BUILD</text>
+              <text x="385" y="58" font-size="17" font-weight="500" text-anchor="middle" fill="#20242a">Measured MRAM silicon</text>
+              <g transform="translate(385 120) scale(1.3)"><line x1="-71" y1="-22" x2="-63" y2="-22" stroke="#294e6b" stroke-width="1.5" /><line x1="17" y1="-22" x2="25" y2="-22" stroke="#294e6b" stroke-width="1.5" /><line x1="-71" y1="-10" x2="-63" y2="-10" stroke="#294e6b" stroke-width="1.5" /><line x1="17" y1="-10" x2="25" y2="-10" stroke="#294e6b" stroke-width="1.5" /><line x1="-71" y1="2" x2="-63" y2="2" stroke="#294e6b" stroke-width="1.5" /><line x1="17" y1="2" x2="25" y2="2" stroke="#294e6b" stroke-width="1.5" /><line x1="-71" y1="14" x2="-63" y2="14" stroke="#294e6b" stroke-width="1.5" /><line x1="17" y1="14" x2="25" y2="14" stroke="#294e6b" stroke-width="1.5" /><line x1="-71" y1="26" x2="-63" y2="26" stroke="#294e6b" stroke-width="1.5" /><line x1="17" y1="26" x2="25" y2="26" stroke="#294e6b" stroke-width="1.5" /><rect x="-63" y="-32" width="80" height="64" rx="4" fill="#eef2f6" stroke="#294e6b" stroke-width="1.5" /><rect x="-55" y="-24" width="44" height="48" fill="#fff" stroke="#9aa6b0" /><line x1="-40.3" y1="-24" x2="-40.3" y2="24" stroke="#9aa6b0" /><line x1="-25.7" y1="-24" x2="-25.7" y2="24" stroke="#9aa6b0" /><line x1="-55" y1="-8" x2="-11" y2="-8" stroke="#9aa6b0" /><line x1="-55" y1="8" x2="-11" y2="8" stroke="#9aa6b0" /><rect x="-7" y="-24" width="18" height="48" rx="2" fill="#294e6b" /><text x="2" y="0" font-size="9" font-weight="600" fill="#fff" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 2 0)">SEC</text><text x="37" y="5" font-size="12" font-weight="600" fill="#294e6b">22 nm</text></g>
+              <text font-size="14" text-anchor="middle" fill="#66707a"><tspan x="385" y="196">22 nm MRAM IMC macro</tspan><tspan x="385" dy="19">with statistical error</tspan><tspan x="385" dy="19">compensation</tspan></text>
+              <rect x="541" y="1" width="228" height="248" rx="8" fill="#fff" stroke="#dfe3e6" />
+              <text x="655" y="32" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#294e6b">03 · BENCHMARK</text>
+              <text x="655" y="58" font-size="17" font-weight="500" text-anchor="middle" fill="#20242a">IMC chip benchmarks</text>
+              <g transform="translate(655 120) scale(1.3)"><line x1="-75" y1="-32" x2="-75" y2="32" stroke="#9aa6b0" stroke-width="1.5" /><line x1="-75" y1="32" x2="75" y2="32" stroke="#9aa6b0" stroke-width="1.5" /><line x1="-61" y1="26" x2="69" y2="-28" stroke="#9aa6b0" stroke-dasharray="4 3" /><circle cx="-55" cy="18" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="-43" cy="8" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="-31" cy="22" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="-19" cy="12" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="-7" cy="-2" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="5" cy="4" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="17" cy="-12" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="31" cy="-6" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="45" cy="-22" r="3.6" fill="#294e6b" fill-opacity="0.78" /><circle cx="59" cy="-16" r="3.6" fill="#294e6b" fill-opacity="0.78" /></g>
+              <text font-size="14" text-anchor="middle" fill="#66707a"><tspan x="655" y="196">Energy efficiency and</tspan><tspan x="655" dy="19">compute density across</tspan><tspan x="655" dy="19">published IMC chips</tspan></text>
+              <rect x="811" y="1" width="228" height="248" rx="8" fill="#faf7fb" stroke="#6a4a78" stroke-dasharray="5 4" />
+              <text x="925" y="32" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#6a4a78">04 · SECURE</text>
+              <text x="925" y="58" font-size="17" font-weight="500" text-anchor="middle" fill="#20242a">Security trade-off</text>
+              <g transform="translate(925 120) scale(1.3)"><rect x="-77" y="-22" width="56" height="44" rx="4" fill="#f1ebf4" stroke="#6a4a78" stroke-width="1.5" /><text x="-49" y="6" font-size="17" font-style="italic" text-anchor="middle" fill="#6a4a78">w</text><line x1="-17" y1="0" x2="15" y2="0" stroke="#6a4a78" stroke-width="1.5" marker-end="url(#a1-arrow-bridge)" /><rect x="21" y="-22" width="56" height="44" rx="4" fill="#fff" stroke="#6a4a78" stroke-width="1.5" stroke-dasharray="4 3" /><text x="49" y="6" font-size="17" font-style="italic" text-anchor="middle" fill="#6a4a78">ŵ</text><text x="-49" y="36" font-size="10.5" text-anchor="middle" fill="#66707a">IMC</text><text x="49" y="36" font-size="10.5" text-anchor="middle" fill="#66707a">extracted</text></g>
+              <text font-size="14" text-anchor="middle" fill="#66707a"><tspan x="925" y="196">Model extraction on</tspan><tspan x="925" dy="19">eNVM IMCs, the bridge</tspan><tspan x="925" dy="19">into Area 02</tspan></text>
+              <line x1="236" y1="120" x2="262" y2="120" stroke="#294e6b" stroke-width="1.5" marker-end="url(#a1-arrow)" />
+              <line x1="506" y1="120" x2="532" y2="120" stroke="#294e6b" stroke-width="1.5" marker-end="url(#a1-arrow)" />
+              <line x1="776" y1="120" x2="802" y2="120" stroke="#6a4a78" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#a1-arrow-bridge)" />
+              <g stroke-width="1.5"><line x1="115" y1="250" x2="115" y2="272" stroke="#9aa6b0" /><line x1="385" y1="250" x2="385" y2="272" stroke="#9aa6b0" /><line x1="655" y1="250" x2="655" y2="272" stroke="#9aa6b0" /><line x1="925" y1="250" x2="925" y2="272" stroke="#6a4a78" stroke-dasharray="4 3" /></g>
+              <rect x="0" y="272" width="770" height="58" rx="6" fill="#f6f7f8" /><rect x="0" y="272" width="4" height="58" fill="#294e6b" />
+              <text x="385" y="297" font-size="15" font-weight="600" text-anchor="middle" fill="#20242a">Energy-accuracy trade-off</text>
+              <text x="385" y="318" font-size="13.5" text-anchor="middle" fill="#66707a">Device, array, sensing, and ADC non-idealities jointly limit compute SNDR</text>
+              <line x1="770" y1="301" x2="811" y2="301" stroke="#6a4a78" stroke-width="1.5" stroke-dasharray="4 3" />
+              <rect x="811" y="272" width="228" height="58" rx="6" fill="#faf7fb" stroke="#6a4a78" stroke-dasharray="4 3" />
+              <text x="925" y="297" font-size="15" font-weight="600" text-anchor="middle" fill="#6a4a78">+ Security</text>
+              <text x="925" y="318" font-size="13.5" text-anchor="middle" fill="#66707a">Energy-accuracy-security</text>
+              <g stroke-width="1.5"><line x1="115" y1="330" x2="115" y2="350" stroke="#9aa6b0" /><line x1="385" y1="330" x2="385" y2="350" stroke="#9aa6b0" /><line x1="655" y1="330" x2="655" y2="350" stroke="#9aa6b0" /><line x1="925" y1="330" x2="925" y2="350" stroke="#6a4a78" stroke-dasharray="4 3" /></g>
+              <a href="#project-crossbar"><rect x="1" y="350" width="228" height="48" rx="6" fill="#fff" stroke="#b9c2c9" /><text x="115" y="379" font-size="14.5" font-weight="600" text-anchor="middle" fill="#20242a">Crossbar IMC analysis</text></a>
+              <a href="#project-parallel-bar"><rect x="1" y="406" width="228" height="48" rx="6" fill="#fff" stroke="#b9c2c9" /><text x="115" y="435" font-size="14.5" font-weight="600" text-anchor="middle" fill="#20242a">Parallel-bar IMC analysis</text></a>
+              <a href="#project-sec-mram"><rect x="271" y="350" width="228" height="48" rx="6" fill="#fff" stroke="#b9c2c9" /><text x="385" y="379" font-size="14.5" font-weight="600" text-anchor="middle" fill="#20242a">SEC–MRAM IMC</text></a>
+              <a href="#project-imc-benchmarking"><rect x="541" y="350" width="228" height="48" rx="6" fill="#fff" stroke="#b9c2c9" /><text x="655" y="379" font-size="14.5" font-weight="600" text-anchor="middle" fill="#20242a">IMC benchmarking</text></a>
+              <a href="#project-eas-imc"><rect x="811" y="350" width="228" height="48" rx="6" fill="#fff" stroke="#6a4a78" stroke-dasharray="4 3" /><text x="925" y="371" font-size="14.5" font-weight="600" text-anchor="middle" fill="#20242a">EAS-IMC</text><text x="925" y="388" font-size="12" text-anchor="middle" fill="#6a4a78">in Area 02</text></a>
+              </svg>
+          </div>
+          <p class="area-figure-hint">Swipe sideways to see the full figure.</p>
+        </figure>
+        <ol class="project-bars">
+          <li class="project-bar" id="project-crossbar">
+            <figure class="project-thumb"><a href="/assets/projects/crossbar-architecture.webp" aria-label="Open the full figure"><img src="/assets/projects/crossbar-architecture.webp" alt="Resistive crossbar in-memory computing architecture with a conductance at each input and output line crossing, followed by TIA current sensing and an ADC on every output line" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>Crossbar IMC analysis</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#crossbar-iscas">ISCAS 2022</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">Computational-accuracy limits of resistive crossbar in-memory computing across MRAM, ReRAM, and FeFET device models.</p>
-              <ul class="project-stats"><li><strong>&lt;1 pp</strong><span>ResNet-20 accuracy gap to an exhaustive search</span></li><li><strong>6–7 b</strong><span>minimum ADC precision at N = 512</span></li></ul>
+              <ul class="bar-stats"><li><strong>&lt;1 pp</strong>ResNet-20 accuracy gap to an exhaustive search</li><li><strong>6–7 b</strong>minimum ADC precision at N = 512</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/9937336">Paper</a><span aria-hidden="true">·</span><a href="https://calmyor.github.io/Crossbar-analysis/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/calmyor/Crossbar-analysis">Code</a></p>
             </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/parallel-bar-imc.webp" alt="Parallel-bar resistive IMC architecture with 2T2R bitcells, a current-sensing loop, and per-column ADCs" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a></div>
-              <h3>Parallel-bar IMC analysis</h3>
+          </li>
+          <li class="project-bar" id="project-parallel-bar">
+            <figure class="project-thumb"><a href="/assets/projects/parallel-bar-imc.webp" aria-label="Open the full figure"><img src="/assets/projects/parallel-bar-imc.webp" alt="Parallel-bar resistive IMC architecture with 2T2R bitcells, a current-sensing loop, and per-column ADCs" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>Parallel-bar IMC analysis</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">Energy-accuracy trade-offs in resistive parallel-bar in-memory computing, modeling how device, array, sensing, and ADC non-idealities jointly limit SNDR.</p>
-              <ul class="project-stats"><li><strong>3</strong><span>eNVM technologies: MRAM, ReRAM, FeFET</span></li><li><strong>22 nm</strong><span>MRAM measurements validate the model</span></li></ul>
+              <ul class="bar-stats"><li><strong>3</strong>eNVM technologies: MRAM, ReRAM, FeFET</li><li><strong>22 nm</strong>MRAM measurements validate the model</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/10478888">Paper</a><span aria-hidden="true">·</span><a href="https://calmyor.github.io/eNVM-IMC-Modeling/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/calmyor/eNVM-IMC-Modeling">Code</a></p>
             </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/imc-benchmarking.webp" alt="Energy efficiency versus compute density of SRAM in-memory-computing chips, clustered by technology node" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a><a class="venue-tag venue-conference" href="/publications.html#benchmarking-cicc">CICC 2022</a></div>
-              <h3>IMC benchmarking</h3>
+          </li>
+          <li class="project-bar" id="project-sec-mram">
+            <figure class="project-thumb"><a href="/assets/projects/sec-mram-die.webp" aria-label="Open the full figure"><img src="/assets/projects/sec-mram-die.webp" alt="Die micrograph of the 22 nm MRAM in-memory computing chip with the IMC core, SEC processor, drivers, ADC column array, and MRAM array outlined" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>SEC–MRAM IMC</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#compute-sndr-jssc">JSSC 2024</a><a class="venue-tag venue-conference" href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a></div></div>
+            <div class="project-bar-body">
+              <p class="project-summary">Behavioral modeling, circuit design, and measured 22 nm MRAM in-memory-computing silicon with statistical error compensation.</p>
+              <ul class="bar-stats"><li><strong>2.7–6 dB</strong>measured SNDR improvement from SEC</li><li><strong>5×</strong>energy reduction at iso-SNDR</li><li><strong>22 nm</strong>measured MRAM prototype</li></ul>
+              <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/10642976">Paper</a><span aria-hidden="true">·</span><a href="https://calmyor.github.io/SEC-Enabled-MRAM-IMC/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/calmyor/SEC-Enabled-MRAM-IMC">Code</a></p>
+            </div>
+          </li>
+          <li class="project-bar" id="project-imc-benchmarking">
+            <figure class="project-thumb"><a href="/assets/projects/imc-benchmarking.webp" aria-label="Open the full figure"><img src="/assets/projects/imc-benchmarking.webp" alt="Energy efficiency versus compute density of SRAM in-memory-computing chips, clustered by technology node" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>IMC benchmarking</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a><a class="venue-tag venue-conference" href="/publications.html#benchmarking-cicc">CICC 2022</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">An open benchmarking resource for in-memory-computing architectures with indexed chip data, normalized metrics, and reproducible plots.</p>
-              <ul class="project-stats"><li><strong>106</strong><span>indexed papers</span></li><li><strong>144</strong><span>operating points</span></li><li><strong>7</strong><span>years of reports</span></li></ul>
+              <ul class="bar-stats"><li><strong>106</strong>indexed papers</li><li><strong>144</strong>operating points</li><li><strong>7</strong>years of reports</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/9976888">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/UIUC-IMC-Benchmarking/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/UIUC-IMC/UIUC-IMC-Benchmarking">Code</a></p>
             </div>
-          </article>
-        </div>
+          </li>
+        </ol>
       </section>
 
       <section class="research-area" id="area-ml-security" aria-labelledby="area-ml-security-title">
         <header class="area-heading"><p class="kicker">Area 02</p><h2 id="area-ml-security-title">Security vulnerabilities of ML accelerators</h2><p>This work in hardware-aware machine-learning security includes side-channel analysis, fault-based attacks, backdoors, and secure accelerator design. It examines how vulnerabilities emerge when learning algorithms are deployed on physical systems.</p></header>
-        <div class="project-grid">
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/robbin-results.webp" alt="ROBBIN attack success rate rising to 90% while test accuracy settles at 85% as more DRAM pages are hammered" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#robbin">ICCAD 2026</a></div>
-              <h3>ROBBIN</h3>
+        <figure class="area-figure">
+          <div class="area-figure-scroll">
+            <svg class="area-diagram" viewBox="0 0 1040 482" role="group" aria-labelledby="a2-title">
+              <title id="a2-title">Area 02 overview: for each project, an icon for the physical mechanism, the hardware it acts on, and what is at risk</title>
+              <defs><marker id="a2-down-attack" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9b4a2c" /></marker><marker id="a2-down-bridge" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6a4a78" /></marker><marker id="a2-down-defense" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2f6b4f" /></marker></defs>
+              <rect x="0" y="84" width="1040" height="112" rx="8" fill="#f6f7f8" />
+              <text x="14" y="132" font-size="12" font-weight="600" letter-spacing="0.9" fill="#66707a">MECHANISM</text>
+              <rect x="0" y="206" width="1040" height="112" rx="8" fill="#f6f7f8" />
+              <text x="14" y="254" font-size="12" font-weight="600" letter-spacing="0.9" fill="#66707a">HARDWARE</text>
+              <rect x="0" y="328" width="1040" height="112" rx="8" fill="#f6f7f8" />
+              <text x="14" y="376" font-size="12" font-weight="600" letter-spacing="0.9" fill="#66707a">AT RISK</text>
+              <line x1="192" y1="66" x2="192" y2="372" stroke="#9b4a2c" stroke-width="2" />
+              <line x1="192" y1="76" x2="192" y2="94" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <line x1="192" y1="198" x2="192" y2="216" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <line x1="192" y1="320" x2="192" y2="338" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <circle cx="192" cy="128" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(192 128) scale(1.35)"><g transform="rotate(-40)"><rect x="-2.6" y="-3" width="5.2" height="17" rx="1.6" fill="#3a4450" /><rect x="-10" y="-12" width="20" height="9" rx="2" fill="#9b4a2c" /></g><path d="M9 7 L13 9 M6 11 L9 14" stroke="#9b4a2c" stroke-width="1.5" stroke-linecap="round" fill="none" /></g>
+              <rect class="icon-label-mask" x="145" y="168" width="94" height="20" rx="3" fill="#f6f7f8" /><text x="192" y="182" font-size="14.5" text-anchor="middle" fill="#20242a">Rowhammer</text>
+              <circle cx="192" cy="250" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(192 250) scale(1.35)"><rect x="-14" y="-8" width="28" height="14" rx="1.5" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><rect x="-11" y="-5" width="7" height="7" rx="0.8" fill="#3a4450" /><rect x="-3.5" y="-5" width="7" height="7" rx="0.8" fill="#9b4a2c" /><rect x="4" y="-5" width="7" height="7" rx="0.8" fill="#3a4450" /><line x1="-12" y1="9.5" x2="12" y2="9.5" stroke="#3a4450" stroke-width="3" stroke-dasharray="1.5 1.5" /></g>
+              <rect class="icon-label-mask" x="145" y="290" width="94" height="20" rx="3" fill="#f6f7f8" /><text x="192" y="304" font-size="14.5" text-anchor="middle" fill="#20242a">DDR4 DRAM</text>
+              <circle cx="192" cy="372" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(192 372) scale(1.35)"><line x1="-11" y1="-6" x2="0" y2="-10" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="-11" y1="-6" x2="0" y2="0" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="-11" y1="-6" x2="0" y2="10" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="-11" y1="6" x2="0" y2="-10" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="-11" y1="6" x2="0" y2="0" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="-11" y1="6" x2="0" y2="10" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="0" y1="-10" x2="11" y2="0" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="0" y1="0" x2="11" y2="0" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><line x1="0" y1="10" x2="11" y2="0" stroke="#3a4450" stroke-width="0.9" stroke-opacity="0.7" /><circle cx="-11" cy="-6" r="2.3" fill="#3a4450" /><circle cx="-11" cy="6" r="2.3" fill="#3a4450" /><circle cx="0" cy="-10" r="2.3" fill="#3a4450" /><circle cx="0" cy="0" r="2.3" fill="#3a4450" /><circle cx="0" cy="10" r="2.3" fill="#3a4450" /><circle cx="11" cy="0" r="3.4" fill="#9b4a2c" /><circle cx="11" cy="0" r="6.2" fill="none" stroke="#9b4a2c" stroke-width="1.2" /></g>
+              <rect class="icon-label-mask" x="118" y="412" width="148" height="20" rx="3" fill="#f6f7f8" /><text x="192" y="426" font-size="14.5" text-anchor="middle" fill="#20242a">Backdoored model</text>
+              <a href="#project-robbin"><rect x="102" y="1" width="180" height="65" rx="6" fill="#fff" stroke="#9b4a2c" stroke-width="1.5" /><text x="192" y="26" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#9b4a2c">FAULT ATTACK</text><text x="192" y="50" font-size="15" font-weight="600" text-anchor="middle" fill="#20242a">ROBBIN</text></a>
+              <line x1="380" y1="66" x2="380" y2="372" stroke="#9b4a2c" stroke-width="2" />
+              <line x1="380" y1="76" x2="380" y2="94" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <line x1="380" y1="198" x2="380" y2="216" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <line x1="380" y1="320" x2="380" y2="338" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <circle cx="380" cy="128" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(380 128) scale(1.35)"><rect x="-10.5" y="-10.5" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="-10.5" y="-3" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="-10.5" y="4.5" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="-3" y="-10.5" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="-3" y="-3" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="-3" y="4.5" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="4.5" y="-10.5" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /><rect x="4.5" y="-3" width="6" height="6" rx="1" fill="#9b4a2c" stroke="#9b4a2c" stroke-width="1.2" /><rect x="4.5" y="4.5" width="6" height="6" rx="1" fill="#fff" stroke="#3a4450" stroke-width="1.2" /></g>
+              <rect class="icon-label-mask" x="317.5" y="168" width="125" height="20" rx="3" fill="#f6f7f8" /><text x="380" y="182" font-size="14.5" text-anchor="middle" fill="#20242a">Cache probing</text>
+              <circle cx="380" cy="250" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(380 250) scale(1.35)"><rect x="-12" y="-12" width="24" height="24" rx="3" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><rect x="-8" y="-8" width="7" height="7" rx="1" fill="#3a4450" /><rect x="1" y="-8" width="7" height="7" rx="1" fill="#3a4450" /><rect x="-8" y="2" width="16" height="5" rx="1" fill="#9b4a2c" /></g>
+              <rect class="icon-label-mask" x="302.5" y="290" width="155" height="20" rx="3" fill="#f6f7f8" /><text x="380" y="304" font-size="14.5" text-anchor="middle" fill="#20242a">Apple silicon SoC</text>
+              <circle cx="380" cy="372" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(380 372) scale(1.35)"><line x1="-10" y1="-5" x2="-2" y2="-11" stroke="#3a4450" stroke-width="1.1" /><line x1="-10" y1="-5" x2="-4" y2="5" stroke="#3a4450" stroke-width="1.1" /><line x1="-4" y1="5" x2="6" y2="10" stroke="#3a4450" stroke-width="1.1" /><line x1="9" y1="-3" x2="6" y2="10" stroke="#3a4450" stroke-width="1.1" /><line x1="-4" y1="5" x2="9" y2="-3" stroke="#3a4450" stroke-width="1.1" /><line x1="-2" y1="-11" x2="9" y2="-3" stroke="#9b4a2c" stroke-width="2" /><circle cx="-10" cy="-5" r="2.7" fill="#3a4450" /><circle cx="-2" cy="-11" r="2.7" fill="#3a4450" /><circle cx="-4" cy="5" r="2.7" fill="#3a4450" /><circle cx="9" cy="-3" r="2.7" fill="#3a4450" /><circle cx="6" cy="10" r="2.7" fill="#3a4450" /></g>
+              <rect class="icon-label-mask" x="306" y="412" width="148" height="20" rx="3" fill="#f6f7f8" /><text x="380" y="426" font-size="14.5" text-anchor="middle" fill="#20242a">GNN and LLM data</text>
+              <a href="#project-slac"><rect x="290" y="1" width="180" height="65" rx="6" fill="#fff" stroke="#9b4a2c" stroke-width="1.5" /><text x="380" y="26" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#9b4a2c">SIDE CHANNEL</text><text x="380" y="50" font-size="15" font-weight="600" text-anchor="middle" fill="#20242a">SLAC</text></a>
+              <line x1="568" y1="66" x2="568" y2="372" stroke="#6a4a78" stroke-width="2" stroke-dasharray="5 4" />
+              <line x1="568" y1="76" x2="568" y2="94" stroke="#6a4a78" stroke-width="2" marker-end="url(#a2-down-bridge)" />
+              <line x1="568" y1="198" x2="568" y2="216" stroke="#6a4a78" stroke-width="2" marker-end="url(#a2-down-bridge)" />
+              <line x1="568" y1="320" x2="568" y2="338" stroke="#6a4a78" stroke-width="2" marker-end="url(#a2-down-bridge)" />
+              <circle cx="568" cy="128" r="32" fill="#fff" stroke="#6a4a78" stroke-width="2" stroke-dasharray="5 4" />
+              <g transform="translate(568 128) scale(1.35)"><rect x="5" y="-10" width="9" height="20" rx="1.5" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><line x1="-13" y1="-6" x2="0" y2="-6" stroke="#6a4a78" stroke-width="1.6" /><path d="M-1 -9 L3 -6 L-1 -3 Z" fill="#6a4a78" /><line x1="-13" y1="0" x2="0" y2="0" stroke="#6a4a78" stroke-width="1.6" /><path d="M-1 -3 L3 0 L-1 3 Z" fill="#6a4a78" /><line x1="-13" y1="6" x2="0" y2="6" stroke="#6a4a78" stroke-width="1.6" /><path d="M-1 3 L3 6 L-1 9 Z" fill="#6a4a78" /></g>
+              <rect class="icon-label-mask" x="502" y="168" width="132" height="20" rx="3" fill="#f6f7f8" /><text x="568" y="182" font-size="14.5" text-anchor="middle" fill="#20242a">Output queries</text>
+              <circle cx="568" cy="250" r="32" fill="#fff" stroke="#6a4a78" stroke-width="2" stroke-dasharray="5 4" />
+              <g transform="translate(568 250) scale(1.35)"><rect x="-12" y="-12" width="24" height="24" rx="3" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><line x1="-8" y1="-5" x2="8" y2="-5" stroke="#6a4a78" stroke-width="1.2" /><line x1="-5" y1="-8" x2="-5" y2="8" stroke="#3a4450" stroke-width="1" /><line x1="-8" y1="0" x2="8" y2="0" stroke="#6a4a78" stroke-width="1.2" /><line x1="0" y1="-8" x2="0" y2="8" stroke="#3a4450" stroke-width="1" /><line x1="-8" y1="5" x2="8" y2="5" stroke="#6a4a78" stroke-width="1.2" /><line x1="5" y1="-8" x2="5" y2="8" stroke="#3a4450" stroke-width="1" /></g>
+              <rect class="icon-label-mask" x="505.5" y="290" width="125" height="20" rx="3" fill="#f6f7f8" /><text x="568" y="304" font-size="14.5" text-anchor="middle" fill="#20242a">eNVM IMC chip</text>
+              <circle cx="568" cy="372" r="32" fill="#fff" stroke="#6a4a78" stroke-width="2" stroke-dasharray="5 4" />
+              <g transform="translate(568 372) scale(1.35)"><text x="0" y="6.5" font-size="20" font-style="italic" text-anchor="middle" fill="#6a4a78">ŵ</text></g>
+              <rect class="icon-label-mask" x="505.5" y="412" width="125" height="20" rx="3" fill="#f6f7f8" /><text x="568" y="426" font-size="14.5" text-anchor="middle" fill="#20242a">Model weights</text>
+              <a href="#project-eas-imc"><rect x="478" y="1" width="180" height="65" rx="6" fill="#fff" stroke="#6a4a78" stroke-width="1.5" stroke-dasharray="5 4" /><text x="568" y="26" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#6a4a78">MODEL EXTRACTION</text><text x="568" y="50" font-size="15" font-weight="600" text-anchor="middle" fill="#20242a">EAS-IMC</text></a>
+              <line x1="756" y1="66" x2="756" y2="372" stroke="#9b4a2c" stroke-width="2" />
+              <line x1="756" y1="76" x2="756" y2="94" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <line x1="756" y1="198" x2="756" y2="216" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <line x1="756" y1="320" x2="756" y2="338" stroke="#9b4a2c" stroke-width="2" marker-end="url(#a2-down-attack)" />
+              <circle cx="756" cy="128" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(756 128) scale(1.35)"><polyline points="-13,4 -8,4 -6,-8 -3,10 0,-4 3,6 6,-10 9,4 13,4" fill="none" stroke="#9b4a2c" stroke-width="1.8" stroke-linejoin="round" /></g>
+              <rect class="icon-label-mask" x="659.5" y="168" width="193" height="20" rx="3" fill="#f6f7f8" /><text x="756" y="182" font-size="14.5" text-anchor="middle" fill="#20242a">Power and cache traces</text>
+              <circle cx="756" cy="250" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(756 250) scale(1.35)"><rect x="-13" y="-13" width="16" height="16" rx="2" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><rect x="-3" y="-3" width="16" height="16" rx="2" fill="#eef2f6" stroke="#3a4450" stroke-width="1.4" /><polyline points="-1,7 2,7 3.5,2 5.5,11 7,5 11,5" fill="none" stroke="#9b4a2c" stroke-width="1.3" /></g>
+              <rect class="icon-label-mask" x="674.5" y="290" width="163" height="20" rx="3" fill="#f6f7f8" /><text x="756" y="304" font-size="14.5" text-anchor="middle" fill="#20242a">FPGA, MCU, and x86</text>
+              <circle cx="756" cy="372" r="32" fill="#fff" stroke="#9b4a2c" stroke-width="2" />
+              <g transform="translate(756 372) scale(1.35)"><circle cx="-6" cy="0" r="5.5" fill="none" stroke="#9b4a2c" stroke-width="2" /><path d="M-0.5 0 H13 M8.5 0 V4.5 M12 0 V4" fill="none" stroke="#9b4a2c" stroke-width="2" stroke-linecap="round" /></g>
+              <rect class="icon-label-mask" x="701" y="412" width="110" height="20" rx="3" fill="#f6f7f8" /><text x="756" y="426" font-size="14.5" text-anchor="middle" fill="#20242a">Secret keys</text>
+              <a href="#project-attack-from-shadows"><rect x="666" y="1" width="180" height="65" rx="6" fill="#fff" stroke="#9b4a2c" stroke-width="1.5" /><text x="756" y="26" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#9b4a2c">SIDE CHANNEL</text><text x="756" y="50" font-size="15" font-weight="600" text-anchor="middle" fill="#20242a">Attack from Shadows</text></a>
+              <line x1="944" y1="66" x2="944" y2="372" stroke="#2f6b4f" stroke-width="2" />
+              <line x1="944" y1="76" x2="944" y2="94" stroke="#2f6b4f" stroke-width="2" marker-end="url(#a2-down-defense)" />
+              <line x1="944" y1="198" x2="944" y2="216" stroke="#2f6b4f" stroke-width="2" marker-end="url(#a2-down-defense)" />
+              <line x1="944" y1="320" x2="944" y2="338" stroke="#2f6b4f" stroke-width="2" marker-end="url(#a2-down-defense)" />
+              <circle cx="944" cy="128" r="32" fill="#fff" stroke="#2f6b4f" stroke-width="2" />
+              <g transform="translate(944 128) scale(1.35)"><rect x="-3.2" y="-13" width="6.4" height="18" rx="3.2" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><rect x="-1.2" y="-5" width="2.4" height="10" fill="#2f6b4f" /><circle cx="0" cy="8" r="5.2" fill="#2f6b4f" /><path d="M8 -10 q3 3 0 6 q-3 3 0 6" fill="none" stroke="#2f6b4f" stroke-width="1.4" stroke-linecap="round" /></g>
+              <rect class="icon-label-mask" x="885.5" y="168" width="117" height="20" rx="3" fill="#f6f7f8" /><text x="944" y="182" font-size="14.5" text-anchor="middle" fill="#20242a">On-chip heat</text>
+              <circle cx="944" cy="250" r="32" fill="#fff" stroke="#2f6b4f" stroke-width="2" />
+              <g transform="translate(944 250) scale(1.35)"><rect x="-12" y="-12" width="24" height="24" rx="3" fill="#fff" stroke="#3a4450" stroke-width="1.4" /><circle cx="5" cy="5" r="5" fill="#2f6b4f" fill-opacity="0.3" /><circle cx="-6" cy="-6" r="1.5" fill="#3a4450" /><circle cx="-6" cy="0" r="1.5" fill="#3a4450" /><circle cx="-6" cy="6" r="1.5" fill="#3a4450" /><circle cx="0" cy="-6" r="1.5" fill="#3a4450" /><circle cx="0" cy="0" r="1.5" fill="#3a4450" /><circle cx="0" cy="6" r="1.5" fill="#3a4450" /><circle cx="6" cy="-6" r="1.5" fill="#3a4450" /><circle cx="6" cy="0" r="1.5" fill="#3a4450" /><circle cx="6" cy="6" r="1.5" fill="#2f6b4f" /></g>
+              <rect class="icon-label-mask" x="874" y="290" width="140" height="20" rx="3" fill="#f6f7f8" /><text x="944" y="304" font-size="14.5" text-anchor="middle" fill="#20242a">65 nm CMOS chip</text>
+              <circle cx="944" cy="372" r="32" fill="#fff" stroke="#2f6b4f" stroke-width="2" />
+              <g transform="translate(944 372) scale(1.35)"><path d="M0 -13 L11 -8 V1 C11 7 6 11 0 13 C-6 11 -11 7 -11 1 V-8 Z" fill="#fff" stroke="#2f6b4f" stroke-width="1.6" /><path d="M-5 0 L-1 4 L6 -4" fill="none" stroke="#2f6b4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g>
+              <rect class="icon-label-mask" x="878" y="412" width="132" height="20" rx="3" fill="#f6f7f8" /><text x="944" y="426" font-size="14.5" text-anchor="middle" fill="#20242a">Chip integrity</text>
+              <a href="#project-hotspot"><rect x="854" y="1" width="180" height="65" rx="6" fill="#fff" stroke="#2f6b4f" stroke-width="1.5" /><text x="944" y="26" font-size="12" font-weight="600" letter-spacing="0.9" text-anchor="middle" fill="#2f6b4f">TROJAN DETECTION</text><text x="944" y="50" font-size="15" font-weight="600" text-anchor="middle" fill="#20242a">HOTSPOT</text></a>
+              <g font-size="13" fill="#66707a"><line x1="0" y1="464" x2="24" y2="464" stroke="#9b4a2c" stroke-width="2" /><text x="32" y="468">Attack</text><line x1="100" y1="464" x2="124" y2="464" stroke="#6a4a78" stroke-width="2" stroke-dasharray="5 4" /><text x="132" y="468">Bridges Area 01 and Area 02</text><line x1="344" y1="464" x2="368" y2="464" stroke="#2f6b4f" stroke-width="2" /><text x="376" y="468">Defense</text></g>
+              </svg>
+          </div>
+          <p class="area-figure-hint">Swipe sideways to see the full figure.</p>
+        </figure>
+        <ol class="project-bars">
+          <li class="project-bar" id="project-robbin">
+            <figure class="project-thumb"><a href="/assets/projects/robbin-results.webp" aria-label="Open the full figure"><img src="/assets/projects/robbin-results.webp" alt="ROBBIN attack success rate rising to 90% while test accuracy settles at 85% as more DRAM pages are hammered" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>ROBBIN</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#robbin">ICCAD 2026</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">Rowhammer-based backdoor injection during neural-network inference, connecting device-specific memory faults with attacker-chosen model behavior.</p>
-              <ul class="project-stats"><li><strong>≈90%</strong><span>attack success on three DDR4 chips</span></li><li><strong>64–73%</strong><span>fewer pages than Don’t Knock</span></li></ul>
+              <ul class="bar-stats"><li><strong>≈90%</strong>attack success on three DDR4 chips</li><li><strong>64–73%</strong>fewer pages than Don’t Knock</li></ul>
               <p class="publication-links project-links"><a href="https://arxiv.org/abs/2608.23774">arXiv</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/ROBBIN-Rowhammer-Based-Backdoor-Injection-during-Inference/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/ROBBIN-Rowhammer-Based-Backdoor-Injection-during-Inference">Code</a></p>
             </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/slac-cprime-step1.webp" alt="First CPrime step, in which loading SLC eviction sets evicts L2 cache lines into the system-level cache until the target SLC sets fill" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#slac">CCS 2026</a></div>
-              <h3>SLAC</h3>
+          </li>
+          <li class="project-bar" id="project-slac">
+            <figure class="project-thumb"><a href="/assets/projects/slac-cprime-step1.webp" aria-label="Open the full figure"><img src="/assets/projects/slac-cprime-step1.webp" alt="First CPrime step, in which loading SLC eviction sets evicts L2 cache lines into the system-level cache until the target SLC sets fill" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>SLAC</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#slac">CCS 2026</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">Access-driven CPU-to-GPU side-channel attacks through the system-level cache on Apple silicon.</p>
-              <ul class="project-stats"><li><strong>&gt;90%</strong><span>GNN edges recovered</span></li><li><strong>94.8%</strong><span>peak input recovery</span></li><li><strong>4,096</strong><span>shared-cache sets mapped</span></li></ul>
+              <ul class="bar-stats"><li><strong>&gt;90%</strong>GNN edges recovered</li><li><strong>94.8%</strong>peak input recovery</li><li><strong>4,096</strong>shared-cache sets mapped</li></ul>
               <p class="publication-links project-links"><a href="https://arxiv.org/abs/2608.09075">arXiv</a><span aria-hidden="true">·</span><a href="https://xth7z.github.io/SLAC_CCS2026/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/xth7z/SLAC_CCS2026">Code</a></p>
             </div>
-          </article>
-          <article class="project-card project-card--wide">
-            <figure class="project-figure"><img src="/assets/projects/eas-imc.webp" alt="Model extraction attack in which an adversary queries an IMC chip holding weights w and retrieves an approximate model" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <p class="bridge-label">Bridges both areas</p><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#eas-tcad">TCAD 2026</a><a class="venue-tag venue-conference" href="/publications.html#eas-iedm">IEDM 2024</a><a class="venue-tag venue-conference" href="/publications.html#model-extraction-iccad">ICCAD 2024</a></div>
-              <h3>EAS-IMC</h3>
+          </li>
+          <li class="project-bar project-bar--bridge" id="project-eas-imc">
+            <figure class="project-thumb"><a href="/assets/projects/eas-imc.webp" aria-label="Open the full figure"><img src="/assets/projects/eas-imc.webp" alt="Model extraction attack in which an adversary queries an IMC chip holding weights w and retrieves an approximate model" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><p class="bridge-label">Bridges both areas</p><h3>EAS-IMC</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#eas-tcad">TCAD 2026</a><a class="venue-tag venue-conference" href="/publications.html#eas-iedm">IEDM 2024</a><a class="venue-tag venue-conference" href="/publications.html#model-extraction-iccad">ICCAD 2024</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">Energy, accuracy, and security trade-offs in embedded non-volatile in-memory computing across MRAM, ReRAM, and FeFET technologies.</p>
-              <ul class="project-stats"><li><strong>0.1%</strong><span>accuracy gap to the fixed-point baseline</span></li><li><strong>4.18 dB</strong><span>lowest SNDR with near-baseline model recovery</span></li><li><strong>3</strong><span>query-based model extraction attacks</span></li></ul>
+              <ul class="bar-stats"><li><strong>0.1%</strong>accuracy gap to the fixed-point baseline</li><li><strong>4.18 dB</strong>lowest SNDR with near-baseline model recovery</li><li><strong>3</strong>query-based model extraction attacks</li></ul>
               <p class="publication-links project-links"><a href="https://doi.org/10.1109/TCAD.2026.3711060">Paper</a><span aria-hidden="true">·</span><a href="https://calmyor.github.io/EAS-tradeoff-for-eNVM-IMCs/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/calmyor/EAS-tradeoff-for-eNVM-IMCs">Code</a></p>
             </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/attack-from-shadows.webp" alt="Unsupervised transfer-learning attack pipeline aligning a target encoder to a fixed source model with MMD and discriminator losses" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#attack-from-shadows">AsiaCCS 2026</a></div>
-              <h3>Attack from Shadows</h3>
+          </li>
+          <li class="project-bar" id="project-attack-from-shadows">
+            <figure class="project-thumb"><a href="/assets/projects/attack-from-shadows.webp" aria-label="Open the full figure"><img src="/assets/projects/attack-from-shadows.webp" alt="Unsupervised transfer-learning attack pipeline aligning a target encoder to a fixed source model with MMD and discriminator losses" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>Attack from Shadows</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#attack-from-shadows">AsiaCCS 2026</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">Unsupervised side-channel transfer learning across devices, leakage modalities, and hardware implementations.</p>
-              <ul class="project-stats"><li><strong>61</strong><span>traces to key recovery, FPGA power → MCU power</span></li><li><strong>435</strong><span>traces to key recovery, MCU power → x86 cache</span></li></ul>
+              <ul class="bar-stats"><li><strong>61</strong>traces to key recovery, FPGA power → MCU power</li><li><strong>435</strong>traces to key recovery, MCU power → x86 cache</li></ul>
               <p class="publication-links project-links"><a href="https://doi.org/10.1145/3779208.3805969">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/UTLA-Cross-Domain/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/UTLA-Cross-Domain">Code</a></p>
             </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/hotspot.webp" alt="HOTSPOT measurement setup with the testing PCB and oscilloscope, beside a zoomed view of the on-chip BJT sensor array around the hardware Trojan" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#hotspot-tcasi">TCAS-I 2026</a></div>
-              <h3>HOTSPOT</h3>
+          </li>
+          <li class="project-bar" id="project-hotspot">
+            <figure class="project-thumb"><a href="/assets/projects/hotspot.webp" aria-label="Open the full figure"><img src="/assets/projects/hotspot.webp" alt="HOTSPOT measurement setup with the testing PCB and oscilloscope, beside a zoomed view of the on-chip BJT sensor array around the hardware Trojan" loading="lazy" decoding="async" /></a></figure>
+            <div class="project-bar-head"><h3>HOTSPOT</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#hotspot-tcasi">TCAS-I 2026</a></div></div>
+            <div class="project-bar-body">
               <p class="project-summary">On-chip differential temperature sensing for detecting localized power anomalies from hardware Trojans on a measured 65-nm CMOS prototype.</p>
-              <ul class="project-stats"><li><strong>95%</strong><span>peak Trojan detection accuracy</span></li><li><strong>6.65×</strong><span>higher SNR than supply-current sensing at 1.95 µW</span></li><li><strong>65 nm</strong><span>measured CMOS prototype</span></li></ul>
+              <ul class="bar-stats"><li><strong>95%</strong>peak Trojan detection accuracy</li><li><strong>6.65×</strong>higher SNR than supply-current sensing at 1.95 µW</li><li><strong>65 nm</strong>measured CMOS prototype</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/11683251">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/HOTSPOT/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/HOTSPOT">Code</a></p>
             </div>
-          </article>
-        </div>
+          </li>
+        </ol>
       </section>
 
       <p class="research-more"><a class="plain-button" href="/publications.html">View all publications</a></p>
