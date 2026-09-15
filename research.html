@@ -17,7 +17,7 @@
 
       <nav class="area-overview" aria-label="Research areas">
         <a class="area-card" href="#area-envm-imc"><span class="area-index">Area 01</span><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">4 projects · SEC–MRAM IMC, Crossbar IMC analysis, Parallel-bar IMC analysis, IMC benchmarking</span></a>
-        <a class="area-card" href="#area-ml-security"><span class="area-index">Area 02</span><strong>Security vulnerabilities of ML accelerators</strong><span class="area-projects">5 projects · HOTSPOT, Attack from Shadows, ROBBIN, SLAC, EAS-IMC</span></a>
+        <a class="area-card" href="#area-ml-security"><span class="area-index">Area 02</span><strong>Security vulnerabilities of ML accelerators</strong><span class="area-projects">5 projects · ROBBIN, SLAC, EAS-IMC, Attack from Shadows, HOTSPOT</span></a>
       </nav>
 
       <section class="research-area" id="area-envm-imc" aria-labelledby="area-envm-imc-title">
@@ -70,26 +70,6 @@
         <header class="area-heading"><p class="kicker">Area 02</p><h2 id="area-ml-security-title">Security vulnerabilities of ML accelerators</h2><p>This work in hardware-aware machine-learning security includes side-channel analysis, fault-based attacks, backdoors, and secure accelerator design. It examines how vulnerabilities emerge when learning algorithms are deployed on physical systems.</p></header>
         <div class="project-grid">
           <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/hotspot.webp" alt="HOTSPOT measurement setup with the testing PCB and oscilloscope, beside a zoomed view of the on-chip BJT sensor array around the hardware Trojan" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#hotspot-tcasi">TCAS-I 2026</a></div>
-              <h3>HOTSPOT</h3>
-              <p class="project-summary">On-chip differential temperature sensing for detecting localized power anomalies from hardware Trojans on a measured 65-nm CMOS prototype.</p>
-              <ul class="project-stats"><li><strong>95%</strong><span>peak Trojan detection accuracy</span></li><li><strong>6.65×</strong><span>higher SNR than supply-current sensing at 1.95 µW</span></li><li><strong>65 nm</strong><span>measured CMOS prototype</span></li></ul>
-              <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/11683251">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/HOTSPOT/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/HOTSPOT">Code</a></p>
-            </div>
-          </article>
-          <article class="project-card">
-            <figure class="project-figure"><img src="/assets/projects/attack-from-shadows.webp" alt="Unsupervised transfer-learning attack pipeline aligning a target encoder to a fixed source model with MMD and discriminator losses" loading="lazy" decoding="async" /></figure>
-            <div class="project-body">
-              <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#attack-from-shadows">AsiaCCS 2026</a></div>
-              <h3>Attack from Shadows</h3>
-              <p class="project-summary">Unsupervised side-channel transfer learning across devices, leakage modalities, and hardware implementations.</p>
-              <ul class="project-stats"><li><strong>61</strong><span>traces to key recovery, FPGA power → MCU power</span></li><li><strong>435</strong><span>traces to key recovery, MCU power → x86 cache</span></li></ul>
-              <p class="publication-links project-links"><a href="https://doi.org/10.1145/3779208.3805969">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/UTLA-Cross-Domain/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/UTLA-Cross-Domain">Code</a></p>
-            </div>
-          </article>
-          <article class="project-card">
             <figure class="project-figure"><img src="/assets/projects/robbin-results.webp" alt="ROBBIN attack success rate rising to 90% while test accuracy settles at 85% as more DRAM pages are hammered" loading="lazy" decoding="async" /></figure>
             <div class="project-body">
               <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#robbin">ICCAD 2026</a></div>
@@ -117,6 +97,26 @@
               <p class="project-summary">Energy, accuracy, and security trade-offs in embedded non-volatile in-memory computing across MRAM, ReRAM, and FeFET technologies.</p>
               <ul class="project-stats"><li><strong>0.1%</strong><span>accuracy gap to the fixed-point baseline</span></li><li><strong>4.18 dB</strong><span>lowest SNDR with near-baseline model recovery</span></li><li><strong>3</strong><span>query-based model extraction attacks</span></li></ul>
               <p class="publication-links project-links"><a href="https://doi.org/10.1109/TCAD.2026.3711060">Paper</a><span aria-hidden="true">·</span><a href="https://calmyor.github.io/EAS-tradeoff-for-eNVM-IMCs/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/calmyor/EAS-tradeoff-for-eNVM-IMCs">Code</a></p>
+            </div>
+          </article>
+          <article class="project-card">
+            <figure class="project-figure"><img src="/assets/projects/attack-from-shadows.webp" alt="Unsupervised transfer-learning attack pipeline aligning a target encoder to a fixed source model with MMD and discriminator losses" loading="lazy" decoding="async" /></figure>
+            <div class="project-body">
+              <div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#attack-from-shadows">AsiaCCS 2026</a></div>
+              <h3>Attack from Shadows</h3>
+              <p class="project-summary">Unsupervised side-channel transfer learning across devices, leakage modalities, and hardware implementations.</p>
+              <ul class="project-stats"><li><strong>61</strong><span>traces to key recovery, FPGA power → MCU power</span></li><li><strong>435</strong><span>traces to key recovery, MCU power → x86 cache</span></li></ul>
+              <p class="publication-links project-links"><a href="https://doi.org/10.1145/3779208.3805969">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/UTLA-Cross-Domain/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/UTLA-Cross-Domain">Code</a></p>
+            </div>
+          </article>
+          <article class="project-card">
+            <figure class="project-figure"><img src="/assets/projects/hotspot.webp" alt="HOTSPOT measurement setup with the testing PCB and oscilloscope, beside a zoomed view of the on-chip BJT sensor array around the hardware Trojan" loading="lazy" decoding="async" /></figure>
+            <div class="project-body">
+              <div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#hotspot-tcasi">TCAS-I 2026</a></div>
+              <h3>HOTSPOT</h3>
+              <p class="project-summary">On-chip differential temperature sensing for detecting localized power anomalies from hardware Trojans on a measured 65-nm CMOS prototype.</p>
+              <ul class="project-stats"><li><strong>95%</strong><span>peak Trojan detection accuracy</span></li><li><strong>6.65×</strong><span>higher SNR than supply-current sensing at 1.95 µW</span></li><li><strong>65 nm</strong><span>measured CMOS prototype</span></li></ul>
+              <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/11683251">Paper</a><span aria-hidden="true">·</span><a href="https://noisyor.github.io/HOTSPOT/">Website</a><span aria-hidden="true">·</span><a href="https://github.com/noisyor/HOTSPOT">Code</a></p>
             </div>
           </article>
         </div>
