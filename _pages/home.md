@@ -7,7 +7,7 @@ page_navigation: false
 
 ![Profile]({{ "/assets/saion.jpg" | relative_url }}){: .align-left style="max-width: 150px; border-radius: 50%;" }
 
-### Saion Roy
+### Saion K. Roy
 Postdoctoral Researcher, Northeastern University
 📍 Boston, MA | ✉️ sai.roy@northeastern.edu
 

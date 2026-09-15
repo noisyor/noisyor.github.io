@@ -11,7 +11,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.author }}, {{ site.github.repository_nwo }}, etc.
 
-title: "Saion Roy"
+title: "Saion K. Roy"
 email: "sai.roy@northeastern.edu"
 description: "Hardware security researcher at Northeastern University"
 baseurl: ""
