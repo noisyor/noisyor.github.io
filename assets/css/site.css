@@ -171,6 +171,7 @@ h1, h2, h3, h4 { font-weight: 500; }
 .news-paper { --tag-bg: #294e6b; --tag-hover: #16364e; }
 .news-talk { --tag-bg: #6a4a78; --tag-hover: #53395e; }
 .news-award { --tag-bg: #8a5a00; --tag-hover: #6e4800; }
+.news-outreach { --tag-bg: #9b4a2c; --tag-hover: #7c3a22; }
 a.venue-tag:hover, a.venue-tag:focus-visible { color: #fff; background: var(--tag-hover); }
 .venue-index { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 32px; }
 .venue-index > h2 { margin: 17px 0 0; }
