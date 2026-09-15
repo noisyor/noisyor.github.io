@@ -149,6 +149,7 @@ h1, h2, h3, h4 { font-weight: 500; }
 .publication-list li > .entry-meta { grid-column: 1; grid-row: 1 / span 4; align-self: start; display: grid; justify-items: start; gap: 5px; padding-top: 4px; }
 .entry-meta .venue-tag { margin: 0; }
 .entry-meta time { color: var(--muted); font-size: var(--text-xs); }
+.entry-meta .month-chip { display: inline-block; padding: 1px 6px 2px; border: 1px solid var(--border); border-radius: 3px; background: #fff; font-size: var(--text-2xs); font-weight: 600; line-height: 1.35; letter-spacing: .01em; white-space: nowrap; }
 .publication-list h3 { margin: 0; font-family: inherit; font-size: var(--text-lg); font-weight: 500; line-height: 1.45; }
 .publication-list h3 a { color: var(--text); text-decoration-color: #a6adb2; }
 .publication-list h3 a:hover { color: var(--accent); text-decoration-color: var(--accent); }
