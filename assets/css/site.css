@@ -213,15 +213,16 @@ a.venue-tag:hover, a.venue-tag:focus-visible { color: #fff; background: var(--ta
 .student-label { margin: 0 0 9px; color: var(--accent); font-size: var(--text-2xs); font-weight: 600; letter-spacing: .07em; text-transform: uppercase; }
 .mentoring-topics { margin-top: 72px; }
 
-.contact-list { margin: 0; border-top: 1px solid var(--border); }
-.contact-list > div { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 28px; padding: 20px 0; border-bottom: 1px solid var(--border); }
-.contact-list dt { color: var(--muted); font-size: var(--text-xs); }
-.contact-list dd { margin: 0; }
-.cv-section { margin-top: 76px; }
-.cv-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: 28px; }
-.cv-heading h2 { margin: 0; font-size: var(--text-2xl); font-weight: 500; line-height: 1.2; }
-.cv-heading p:not(.kicker) { margin: 8px 0 0; color: var(--muted); }
-.cv-heading .plain-button { flex: 0 0 auto; margin-top: 0; }
+
+.contact-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.contact-card { display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: 16px; row-gap: 2px; align-items: start; height: 100%; padding: 22px 24px; color: var(--text); text-decoration: none; background: #fff; border: 1px solid var(--border); border-radius: 6px; transition: border-color .15s ease, background-color .15s ease; }
+.contact-card:hover, .contact-card:focus-visible { color: var(--text); background: var(--surface); border-color: var(--accent); }
+.contact-card-icon { grid-row: 1 / span 3; display: grid; place-items: center; width: 44px; height: 44px; color: var(--accent); background: #eef2f6; border-radius: 50%; }
+.contact-card-icon svg { width: 22px; height: 22px; }
+.contact-card-label { color: var(--muted); font-size: var(--text-2xs); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.contact-card-value { font-size: var(--text-lg); font-weight: 500; line-height: 1.35; overflow-wrap: anywhere; }
+.contact-card-action { margin-top: 6px; color: var(--accent); font-size: var(--text-xs); font-weight: 500; }
+.contact-card:hover .contact-card-action { text-decoration: underline; text-underline-offset: 3px; }
 
 .site-footer { border-top: 1px solid var(--border); }
 .footer-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--muted); font-size: var(--text-xs); }
@@ -236,6 +237,7 @@ a.venue-tag:hover, a.venue-tag:focus-visible { color: #fff; background: var(--ta
 }
 
 @media (max-width: 760px) {
+  .contact-cards { grid-template-columns: 1fr; }
   .container { width: min(100% - 32px, var(--max-width)); }
   .header-inner { min-height: auto; padding-top: 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
   .site-tabs { width: 100%; min-height: 44px; gap: 22px; overflow-x: auto; }
@@ -247,7 +249,7 @@ a.venue-tag:hover, a.venue-tag:focus-visible { color: #fff; background: var(--ta
   .content-page { padding-block: 54px 72px; }
   .page-heading { margin-bottom: 48px; }
   .topic-list article, .year-group, .talk-list li, .student-card { grid-template-columns: 1fr; gap: 16px; }
-  .history-list > div, .contact-list > div, .venue-groups > div { grid-template-columns: 1fr; gap: 4px; }
+  .history-list > div, .venue-groups > div { grid-template-columns: 1fr; gap: 4px; }
   .year-group { margin-top: 44px; }
   .venue-index { grid-template-columns: 1fr; gap: 12px; }
   .area-overview { grid-template-columns: 1fr; }
@@ -263,7 +265,6 @@ a.venue-tag:hover, a.venue-tag:focus-visible { color: #fff; background: var(--ta
   .publication-list li > :not(.venue-tag):not(.entry-meta) { grid-column: auto; }
   .publication-list li > .entry-meta { grid-column: auto; grid-row: auto; display: flex; align-items: center; gap: 10px; padding-top: 0; }
   .publication-list li > .venue-tag { margin: 0; }
-  .cv-heading { align-items: flex-start; flex-direction: column; gap: 20px; }
 }
 
 @media (max-width: 460px) {
