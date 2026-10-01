@@ -15,7 +15,9 @@ Postdoctoral Researcher, Northeastern University
 
 ## About Me
 
-I am a postdoctoral researcher at Northeastern University working on security of machine learning models on specialized hardware.
+I am a postdoctoral researcher at Northeastern University, Department of Electrical and Computer Engineering. Prior to this, I obtained my Ph.D. in Electrical and Computer Engineering from the University of Illinois at Urbana-Champaign (UIUC) in 2024, and my bachelor's and master's in Electronics and Electrical Communication Engineering from IIT Kharagpur in 2018.
+
+My research focuses on energy-efficient and secure machine learning accelerators, treating security as a design metric alongside energy efficiency and throughput through algorithm-architecture-circuit co-design. Among my recent works published in top Circuits, EDA, and Security conferences are an IEEE Journal of Solid-State Circuits (JSSC) paper based on an accuracy-boosted 22 nm MRAM-based in-memory computing IC, and an ACM Conference on Computer and Communications Security (CCS) paper on secret leakage from the Apple M1 heterogeneous SoC.
 
 ---
 
