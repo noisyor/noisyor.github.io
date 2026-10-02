@@ -82,6 +82,9 @@ main { flex: 1; }
 .home-main .kicker { margin-bottom: 10px; }
 .home-main h2 { margin: 0 0 18px; font-size: var(--text-xl); font-weight: 600; letter-spacing: -.01em; }
 .home-main > p { margin: 0 0 16px; line-height: 1.65; }
+.intro-group { margin: 18px 0 6px; font-size: var(--text-base); font-weight: 600; }
+.intro-group a { color: var(--text); text-decoration: none; }
+.intro-group a:hover { color: var(--accent); text-decoration: underline; }
 .intro-list { margin: 0 0 16px; padding-left: 1.5em; line-height: 1.65; }
 .intro-list li { margin-top: 8px; padding-left: 4px; }
 .home-news { margin-top: 48px; }

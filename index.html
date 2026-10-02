@@ -17,7 +17,7 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon.png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="/assets/css/site.css?v=20261002" />
+    <link rel="stylesheet" href="/assets/css/site.css?v=20261002b" />
     <title>Saion K. Roy</title>
       <script src="/assets/js/site.js?v=20261002" defer></script>
   </head>
@@ -56,11 +56,17 @@
           <h2 id="about-title">About me</h2>
         <p>I am a postdoctoral researcher at Northeastern University, <a href="https://ece.northeastern.edu/">Department of Electrical and Computer Engineering</a>. Prior to this, I obtained my Ph.D. in <a href="https://ece.illinois.edu/">Electrical and Computer Engineering</a> from the University of Illinois at Urbana-Champaign (UIUC) in 2024, and my bachelor&rsquo;s and master&rsquo;s in <a href="https://www.iitkgp.ac.in/department/EC">Electronics and Electrical Communication Engineering</a> from IIT Kharagpur in 2018.</p>
         <p>I am broadly interested in energy-efficient and secure machine learning accelerators. My work treats security as a design metric alongside energy efficiency and throughput, and quantifies the trade-offs among them through algorithm-architecture-circuit co-design. On the circuits side, this means analog in-memory computing macros built on embedded non-volatile memory, where circuit non-idealities, ADC precision, and array dimension determine the compute accuracy. On the security side, it means attacks and defenses on the hardware that runs machine learning, from cache side channels on heterogeneous SoCs to Rowhammer-based backdoors and on-chip Trojans. Some of my recent works address</p>
+        <h3 class="intro-group"><a href="/research.html#area-envm-imc">Energy-efficient eNVM in-memory computing accelerator design</a></h3>
         <ol class="intro-list">
-          <li>the energy-accuracy-security trade-off in embedded non-volatile in-memory computing, from the fundamental accuracy limits of resistive crossbars to model extraction attacks on MRAM-based macros (<a href="/publications.html#eas-tcad">TCAD 2026</a>, <a href="/publications.html#eas-iedm">IEDM 2024</a>, <a href="/publications.html#model-extraction-iccad">ICCAD 2024</a>, <a href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a>, <a href="/publications.html#crossbar-iscas">ISCAS 2022</a>).</li>
-          <li>a 22&nbsp;nm MRAM-based in-memory computing IC that boosts compute SNDR through statistical error compensation, along with benchmarking that places in-memory computing designs on a common footing (<a href="/publications.html#compute-sndr-jssc">JSSC 2024</a>, <a href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a>, <a href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a>, <a href="/publications.html#benchmarking-cicc">CICC 2022</a>).</li>
-          <li>access-driven side-channel attacks across the CPU and GPU of heterogeneous SoCs, and unsupervised transfer of side-channel analysis across devices and modalities (<a href="/publications.html#slac">CCS 2026</a>, <a href="/publications.html#attack-from-shadows">AsiaCCS 2026</a>).</li>
+          <li>benchmarking that places in-memory computing designs on a common footing (<a href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a>, <a href="/publications.html#benchmarking-cicc">CICC 2022</a>).</li>
+          <li>the fundamental accuracy limits and energy-accuracy trade-offs of resistive crossbar and parallel-bar arrays (<a href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a>, <a href="/publications.html#crossbar-iscas">ISCAS 2022</a>).</li>
+          <li>a 22&nbsp;nm MRAM-based in-memory computing IC that boosts compute SNDR through statistical error compensation (<a href="/publications.html#compute-sndr-jssc">JSSC 2024</a>, <a href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a>).</li>
+        </ol>
+        <h3 class="intro-group"><a href="/research.html#area-ml-security">Security vulnerabilities of ML accelerators</a></h3>
+        <ol class="intro-list">
           <li>inference-time backdoor injection through Rowhammer bit flips in deployed models (<a href="/publications.html#robbin">ICCAD 2026</a>).</li>
+          <li>access-driven side-channel attacks across the CPU and GPU of heterogeneous SoCs, and unsupervised transfer of side-channel analysis across devices and modalities (<a href="/publications.html#slac">CCS 2026</a>, <a href="/publications.html#attack-from-shadows">AsiaCCS 2026</a>).</li>
+          <li>the energy-accuracy-security trade-off in embedded non-volatile in-memory computing, including model extraction attacks on MRAM-based macros (<a href="/publications.html#eas-tcad">TCAD 2026</a>, <a href="/publications.html#eas-iedm">IEDM 2024</a>, <a href="/publications.html#model-extraction-iccad">ICCAD 2024</a>).</li>
           <li>on-chip Trojan detection through temperature sensing (<a href="/publications.html#hotspot-tcasi">TCAS-I 2026</a>).</li>
         </ol>
         <section class="home-news" aria-labelledby="home-news-title">
