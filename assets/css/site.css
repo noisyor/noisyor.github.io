@@ -174,13 +174,14 @@ h1, h2, h3, h4 { font-weight: 500; }
 .publication-list p { margin: 6px 0 0; font-size: var(--text-xs); }
 .publication-list .authors { color: #424951; }
 .publication-list .venue { color: var(--muted); font-style: italic; }
-.publication-list .publication-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 9px; margin-top: 10px; font-style: normal; }
+.publication-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 9px; margin-top: 10px; font-style: normal; }
 .publication-links a, .project-list .text-link { display: inline-flex; align-items: center; gap: 6px; }
 .publication-links a { font-size: var(--text-xs); font-weight: 500; }
 .publication-links a::before, .project-list .text-link::before { display: inline-block; flex: 0 0 auto; color: currentColor; }
-.publication-links a:not([href*="github.io"]):not([href*="github.com"])::before { content: ""; width: 10px; height: 13px; border: 1px solid currentColor; border-radius: 1px; background: linear-gradient(currentColor, currentColor) 2px 4px / 6px 1px no-repeat, linear-gradient(currentColor, currentColor) 2px 7px / 6px 1px no-repeat, linear-gradient(currentColor, currentColor) 2px 10px / 4px 1px no-repeat; }
+.publication-links a:not([href*="github.io"]):not([href*="github.com"]):not([href*="youtube.com"])::before { content: ""; width: 10px; height: 13px; border: 1px solid currentColor; border-radius: 1px; background: linear-gradient(currentColor, currentColor) 2px 4px / 6px 1px no-repeat, linear-gradient(currentColor, currentColor) 2px 7px / 6px 1px no-repeat, linear-gradient(currentColor, currentColor) 2px 10px / 4px 1px no-repeat; }
 .publication-links a[href*="github.io"]::before, .project-list .text-link[href*="github.io"]::before { content: ""; width: 12px; height: 12px; border: 1px solid currentColor; border-radius: 50%; background: linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat, linear-gradient(90deg, transparent 44%, currentColor 44% 56%, transparent 56%) center / 100% 100% no-repeat; }
 .publication-links a[href*="github.com"]::before, .project-list .text-link[href*="github.com"]::before { content: "</>"; font: 600 var(--text-2xs)/1 ui-monospace, "SFMono-Regular", Consolas, monospace; letter-spacing: -.08em; }
+.publication-links a[href*="youtube.com"]::before { content: ""; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 9px; border-color: transparent transparent transparent currentColor; }
 .publication-links span { color: var(--border); }
 .publication-list li { scroll-margin-top: 24px; }
 .publication-list li:target { background: var(--surface); box-shadow: -14px 0 0 var(--surface), 14px 0 0 var(--surface); }
