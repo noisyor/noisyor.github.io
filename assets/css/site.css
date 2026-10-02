@@ -213,6 +213,7 @@ a.venue-tag:hover, a.venue-tag:focus-visible { color: #fff; background: var(--ta
 .student-papers li > span:last-child { display: block; margin-top: 4px; color: var(--muted); font-size: var(--text-xs); }
 .student-label { margin: 0 0 9px; color: var(--accent); font-size: var(--text-2xs); font-weight: 600; letter-spacing: .07em; text-transform: uppercase; }
 .mentoring-topics { margin-top: 72px; }
+.mentoring-topics .topic-list { border-top: 0; }
 
 
 .contact-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
