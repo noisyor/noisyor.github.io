@@ -15,11 +15,11 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header"><div class="container header-inner"><a class="site-name" href="/">Saion K. Roy</a><nav class="site-tabs" aria-label="Primary navigation"><a href="/">Home</a><a href="/research.html" aria-current="page">Research</a><a href="/publications.html">Publications</a><a href="/news.html">News</a><a href="/advising/">Advising</a><a href="/contact/">Contact</a></nav></div></header>
     <main id="main" class="container content-page research-page">
-      <header class="page-heading research-intro"><p class="kicker">Research</p><h1>Research and projects</h1><p>This research connects machine-learning security with integrated-circuit and system design, spanning algorithms, computer architecture, and hardware implementation.</p></header>
+      <header class="page-heading research-intro"><h1>Research and projects</h1><p>This research connects machine-learning security with integrated-circuit and system design, spanning algorithms, computer architecture, and hardware implementation.</p></header>
 
       <nav class="area-overview" aria-label="Research areas">
-        <a class="area-card" href="#area-envm-imc"><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">4 projects · IMC benchmarking, Crossbar IMC analysis, Parallel-bar IMC analysis, SEC–MRAM IMC</span></a>
-        <a class="area-card" href="#area-ml-security"><strong>Security vulnerabilities of ML accelerators</strong><span class="area-projects">5 projects · ROBBIN, SLAC, EAS-IMC, Attack from Shadows, HOTSPOT</span></a>
+        <a class="area-card" href="#area-envm-imc"><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">IMC benchmarking, Crossbar IMC analysis, Parallel-bar IMC analysis, SEC–MRAM IMC</span></a>
+        <a class="area-card" href="#area-ml-security"><strong>Security vulnerabilities of ML accelerators</strong><span class="area-projects">ROBBIN, SLAC, EAS-IMC, Attack from Shadows, HOTSPOT</span></a>
       </nav>
 
       <section class="research-area" id="area-envm-imc" aria-labelledby="area-envm-imc-title">
@@ -68,7 +68,7 @@
               <a href="#project-eas-imc"><rect x="811" y="350" width="228" height="48" rx="6" fill="#fff" stroke="#6a4a78" stroke-dasharray="4 3" /><text x="925" y="371" font-size="14.5" font-weight="600" text-anchor="middle" fill="#20242a">EAS-IMC</text><text x="925" y="388" font-size="12" text-anchor="middle" fill="#6a4a78">in accelerator security</text></a>
               </svg>
           </div>
-          <p class="area-figure-hint">Swipe sideways to see the full figure.</p>
+          <p class="area-figure-hint">Tap the figure to enlarge it, then swipe sideways.</p>
         </figure>
         <ol class="project-bars">
           <li class="project-bar" id="project-imc-benchmarking">
@@ -196,7 +196,7 @@
               <g font-size="13" fill="#66707a"><line x1="0" y1="464" x2="24" y2="464" stroke="#9b4a2c" stroke-width="2" /><text x="32" y="468">Attack</text><line x1="100" y1="464" x2="124" y2="464" stroke="#6a4a78" stroke-width="2" stroke-dasharray="5 4" /><text x="132" y="468">Bridges both areas</text><line x1="344" y1="464" x2="368" y2="464" stroke="#2f6b4f" stroke-width="2" /><text x="376" y="468">Defense</text></g>
               </svg>
           </div>
-          <p class="area-figure-hint">Swipe sideways to see the full figure.</p>
+          <p class="area-figure-hint">Tap the figure to enlarge it, then swipe sideways.</p>
         </figure>
         <ol class="project-bars">
           <li class="project-bar" id="project-robbin">
@@ -250,5 +250,13 @@
       <p class="research-more"><a class="plain-button" href="/publications.html">View all publications</a></p>
     </main>
     <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Saion K. Roy</span><a href="mailto:sai.roy@northeastern.edu">sai.roy@northeastern.edu</a></div></footer>
+    <script>
+      document.querySelectorAll(".area-figure-scroll").forEach(function (box) {
+        box.addEventListener("click", function (event) {
+          if (event.target.closest("a") || window.matchMedia("(min-width: 761px)").matches) return;
+          box.closest(".area-figure").classList.toggle("is-zoomed");
+        });
+      });
+    </script>
   </body>
 </html>
