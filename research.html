@@ -16,7 +16,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header"><div class="container header-inner"><a class="site-name" href="/">Saion K. Roy</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button><nav id="site-nav" class="site-tabs" aria-label="Primary navigation"><a href="/">Home</a><a href="/research.html" aria-current="page">Research</a><a href="/publications.html">Publications</a><a href="/news.html">News</a><a href="/advising/">Advising</a><a href="/contact/">Contact</a></nav></div></header>
     <main id="main" class="container content-page research-page">
-      <header class="page-heading research-intro"><h1>Research and projects</h1><p>This research connects machine-learning security with integrated-circuit and system design, spanning algorithms, computer architecture, and hardware implementation.</p></header>
+      <header class="page-heading research-intro"><h1>Research and projects</h1><p>This research connects machine-learning security with integrated-circuit and system design across algorithms, computer architecture, and hardware implementation. Improving the energy efficiency of ML accelerators, for example through in-memory computing (IMC), exposes new attack surfaces. Commercial platforms show the same pattern, where shared resources such as caches and DRAM enable new side-channel and backdoor attacks. As these vulnerabilities cut across the stack, finding and fixing them calls for algorithm-architecture-circuit co-design, toward secure and efficient ML hardware.</p></header>
 
       <nav class="area-overview" aria-label="Research areas">
         <a class="area-card" href="#area-envm-imc"><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">IMC benchmarking, Crossbar IMC analysis, Parallel-bar IMC analysis, SEC–MRAM IMC</span></a>
@@ -24,7 +24,7 @@
       </nav>
 
       <section class="research-area" id="area-envm-imc" aria-labelledby="area-envm-imc-title">
-        <header class="area-heading"><h2 id="area-envm-imc-title">Energy-efficient eNVM in-memory computing accelerator design</h2><p>This work develops and analyzes energy-efficient hardware for machine learning, including in-memory computing and accelerator architectures. It considers the relationships among circuit non-idealities, energy, accuracy, performance, and security.</p></header>
+        <header class="area-heading"><h2 id="area-envm-imc-title">Energy-efficient eNVM in-memory computing accelerator design</h2><p>This work benchmarks, models, and builds resistive IMC architectures on embedded non-volatile memory (MRAM, ReRAM, and FeFET). It quantifies how device non-idealities, wire parasitics, sensing mismatch, and ADC precision set the compute SNDR, and how that SNDR trades off against energy, network accuracy, and security.</p></header>
         <figure class="area-figure">
           <div class="area-figure-scroll">
             <svg class="area-diagram area-diagram--desktop" viewBox="0 0 1040 456" role="group" aria-labelledby="a1-title">
@@ -76,8 +76,8 @@
             <figure class="project-thumb"><a href="/assets/projects/imc-benchmarking.webp" aria-label="Open the full figure"><img src="/assets/projects/imc-benchmarking.webp" alt="Energy efficiency versus compute density of SRAM in-memory-computing chips, clustered by technology node" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>IMC benchmarking</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a><a class="venue-tag venue-conference" href="/publications.html#benchmarking-cicc">CICC 2022</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">An open benchmarking resource for in-memory-computing architectures with indexed chip data, normalized metrics, and reproducible plots.</p>
-              <ul class="bar-stats"><li><strong>106</strong>indexed papers</li><li><strong>144</strong>operating points</li><li><strong>7</strong>years of reports</li></ul>
+              <p class="project-summary">A compositional framework that compares over 100 IMC and digital chips using bit-normalized TOPS, TOPS/W, and TOPS/mm², released as an open resource.</p>
+              <ul class="bar-stats"><li><strong>106</strong>indexed papers</li><li><strong>13×</strong>SRAM IMC lead over digital in bank-level energy efficiency</li><li><strong>6.6×</strong>SRAM IMC lead over digital in compute density</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/9976888">Paper</a></p>
             </div>
           </li>
@@ -85,7 +85,7 @@
             <figure class="project-thumb"><a href="/assets/projects/crossbar-architecture.webp" aria-label="Open the full figure"><img src="/assets/projects/crossbar-architecture.webp" alt="Resistive crossbar in-memory computing architecture with a conductance at each input and output line crossing, followed by TIA current sensing and an ADC on every output line" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>Crossbar IMC analysis</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#crossbar-iscas">ISCAS 2022</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Computational-accuracy limits of resistive crossbar in-memory computing across MRAM, ReRAM, and FeFET device models.</p>
+              <p class="project-summary">Statistical signal-and-noise models that set the computational-accuracy limits of resistive crossbar IMCs across MRAM, ReRAM, and FeFET.</p>
               <ul class="bar-stats"><li><strong>&lt;1 pp</strong>ResNet-20 accuracy gap to an exhaustive search</li><li><strong>6–7 b</strong>minimum ADC precision at N = 512</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/9937336">Paper</a></p>
             </div>
@@ -94,8 +94,8 @@
             <figure class="project-thumb"><a href="/assets/projects/parallel-bar-imc.webp" aria-label="Open the full figure"><img src="/assets/projects/parallel-bar-imc.webp" alt="Parallel-bar resistive IMC architecture with 2T2R bitcells, a current-sensing loop, and per-column ADCs" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>Parallel-bar IMC analysis</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Energy-accuracy trade-offs in resistive parallel-bar in-memory computing, modeling how device, array, sensing, and ADC non-idealities jointly limit SNDR.</p>
-              <ul class="bar-stats"><li><strong>3</strong>eNVM technologies: MRAM, ReRAM, FeFET</li><li><strong>22 nm</strong>MRAM measurements validate the model</li></ul>
+              <p class="project-summary">Energy-accuracy trade-offs in MRAM, ReRAM, and FeFET parallel-bar IMCs, where wire parasitics, conductance variation, and sensing mismatch cap the compute SNDR and the network-level accuracy.</p>
+              <ul class="bar-stats"><li><strong>18–22 dB</strong>maximum compute SNDR</li><li><strong>≈12</strong>conductance contrast beyond which SNDR saturates</li><li><strong>22 nm</strong>MRAM measurements validate the model</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/10478888">Paper</a></p>
             </div>
           </li>
@@ -103,8 +103,8 @@
             <figure class="project-thumb"><a href="/assets/projects/sec-mram-die.webp" aria-label="Open the full figure"><img src="/assets/projects/sec-mram-die.webp" alt="Die micrograph of the 22 nm MRAM in-memory computing chip with the IMC core, SEC processor, drivers, ADC column array, and MRAM array outlined" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>SEC–MRAM IMC</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#compute-sndr-jssc">JSSC 2024</a><a class="venue-tag venue-conference" href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Behavioral modeling, circuit design, and measured 22 nm MRAM in-memory-computing silicon with statistical error compensation.</p>
-              <ul class="bar-stats"><li><strong>2.7–6 dB</strong>measured SNDR improvement from SEC</li><li><strong>5×</strong>energy reduction at iso-SNDR</li><li><strong>22 nm</strong>measured MRAM prototype</li></ul>
+              <p class="project-summary">A measured 22 nm MRAM IMC macro with offset-compensating current sensing for mismatch and statistical error compensation (SEC) for wire parasitics.</p>
+              <ul class="bar-stats"><li><strong>2.7–6 dB</strong>measured compute-SNDR gain at 0.8% energy overhead</li><li><strong>74.8% → 82.0%</strong>ResNet-20 accuracy on CIFAR-10 without noise-aware training</li><li><strong>5×</strong>energy reduction at iso-SNDR</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/10642976">Paper</a></p>
             </div>
           </li>
@@ -112,7 +112,7 @@
       </section>
 
       <section class="research-area" id="area-ml-security" aria-labelledby="area-ml-security-title">
-        <header class="area-heading"><h2 id="area-ml-security-title">Security vulnerabilities of ML accelerators</h2><p>This work in hardware-aware machine-learning security includes side-channel analysis, fault-based attacks, backdoors, and secure accelerator design. It examines how vulnerabilities emerge when learning algorithms are deployed on physical systems.</p></header>
+        <header class="area-heading"><h2 id="area-ml-security-title">Security vulnerabilities of ML accelerators</h2><p>This work studies integrity and confidentiality attacks on the hardware that runs machine learning, and defenses against them. It covers side-channel attacks on consumer hardware, Rowhammer-based backdoor attacks on ML accelerators, model extraction from IMCs, and hardware-Trojan detection through on-chip temperature sensing.</p></header>
         <figure class="area-figure">
           <div class="area-figure-scroll">
             <svg class="area-diagram area-diagram--desktop" viewBox="0 0 1040 482" role="group" aria-labelledby="a2-title">
@@ -204,8 +204,8 @@
             <figure class="project-thumb"><a href="/assets/projects/robbin-results.webp" aria-label="Open the full figure"><img src="/assets/projects/robbin-results.webp" alt="ROBBIN attack success rate rising to 90% while test accuracy settles at 85% as more DRAM pages are hammered" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>ROBBIN</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#robbin">ICCAD 2026</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Rowhammer-based backdoor injection during neural-network inference, connecting device-specific memory faults with attacker-chosen model behavior.</p>
-              <ul class="bar-stats"><li><strong>≈90%</strong>attack success on three DDR4 chips</li><li><strong>64–73%</strong>fewer pages than Don’t Knock</li></ul>
+              <p class="project-summary">Rowhammer-based backdoor injection during DNN inference through DDR4 DRAM bit flips, with a vulnerability-aware DRAM page allocation that keeps model weights off Rowhammer-prone pages.</p>
+              <ul class="bar-stats"><li><strong>≈90%</strong>attack success on three DDR4 chips</li><li><strong>64–73%</strong>fewer pages than Don’t Knock</li><li><strong>86% → 91%</strong>clean accuracy restored by the page-allocation defense</li></ul>
               <p class="publication-links project-links"><a href="https://arxiv.org/abs/2608.23774">arXiv</a></p>
             </div>
           </li>
@@ -213,8 +213,8 @@
             <figure class="project-thumb"><a href="/assets/projects/slac-cprime-step1.webp" aria-label="Open the full figure"><img src="/assets/projects/slac-cprime-step1.webp" alt="First CPrime step, in which loading SLC eviction sets evicts L2 cache lines into the system-level cache until the target SLC sets fill" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>SLAC</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#slac">CCS 2026</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Access-driven CPU-to-GPU side-channel attacks through the system-level cache on Apple silicon.</p>
-              <ul class="bar-stats"><li><strong>&gt;90%</strong>GNN edges recovered</li><li><strong>94.8%</strong>peak input recovery</li><li><strong>4,096</strong>shared-cache sets mapped</li></ul>
+              <p class="project-summary">An access-driven CPU-to-GPU Prime+Probe side channel through the shared system-level cache of the Apple M1, built by reverse-engineering its indexing function.</p>
+              <ul class="bar-stats"><li><strong>&gt;90%</strong>GNN edges recovered</li><li><strong>94.8%</strong>peak LLM input-keyword recovery from an unprivileged CPU process</li><li><strong>4,096</strong>shared-cache sets mapped</li></ul>
               <p class="publication-links project-links"><a href="https://arxiv.org/abs/2608.09075">arXiv</a></p>
             </div>
           </li>
@@ -222,8 +222,8 @@
             <figure class="project-thumb"><a href="/assets/projects/eas-imc.webp" aria-label="Open the full figure"><img src="/assets/projects/eas-imc.webp" alt="Model extraction attack in which an adversary queries an IMC chip holding weights w and retrieves an approximate model" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><p class="bridge-label">Bridges both areas</p><h3>EAS-IMC</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#eas-tcad">TCAD 2026</a><a class="venue-tag venue-conference" href="/publications.html#eas-iedm">IEDM 2024</a><a class="venue-tag venue-conference" href="/publications.html#model-extraction-iccad">ICCAD 2024</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Energy, accuracy, and security trade-offs in embedded non-volatile in-memory computing across MRAM, ReRAM, and FeFET technologies.</p>
-              <ul class="bar-stats"><li><strong>0.1%</strong>accuracy gap to the fixed-point baseline</li><li><strong>4.18 dB</strong>lowest SNDR with near-baseline model recovery</li><li><strong>3</strong>query-based model extraction attacks</li></ul>
+              <p class="project-summary">Energy-accuracy-security trade-offs in MRAM, ReRAM, and FeFET IMCs, showing that analog noise lowers compute SNDR but does not protect stored weights from gradient-based model extraction attacks.</p>
+              <ul class="bar-stats"><li><strong>0.1%</strong>accuracy gap to the fixed-point baseline</li><li><strong>4.18 dB</strong>lowest SNDR with near-baseline model recovery</li><li><strong>&lt;2 dB</strong>compute SNDR of the secure operating zone</li></ul>
               <p class="publication-links project-links"><a href="https://doi.org/10.1109/TCAD.2026.3711060">Paper</a></p>
             </div>
           </li>
@@ -231,7 +231,7 @@
             <figure class="project-thumb"><a href="/assets/projects/attack-from-shadows.webp" aria-label="Open the full figure"><img src="/assets/projects/attack-from-shadows.webp" alt="Unsupervised transfer-learning attack pipeline aligning a target encoder to a fixed source model with MMD and discriminator losses" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>Attack from Shadows</h3><div class="project-venues"><a class="venue-tag venue-conference" href="/publications.html#attack-from-shadows">AsiaCCS 2026</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">Unsupervised side-channel transfer learning across devices, leakage modalities, and hardware implementations.</p>
+              <p class="project-summary">An unsupervised transfer-learning-based side-channel attack (UTLA) that recovers cryptographic keys across FPGA, microcontroller, and x86 targets and across leakage modalities.</p>
               <ul class="bar-stats"><li><strong>61</strong>traces to key recovery, FPGA power → MCU power</li><li><strong>435</strong>traces to key recovery, MCU power → x86 cache</li></ul>
               <p class="publication-links project-links"><a href="https://doi.org/10.1145/3779208.3805969">Paper</a></p>
             </div>
@@ -240,8 +240,8 @@
             <figure class="project-thumb"><a href="/assets/projects/hotspot.webp" aria-label="Open the full figure"><img src="/assets/projects/hotspot.webp" alt="HOTSPOT measurement setup with the testing PCB and oscilloscope, beside a zoomed view of the on-chip BJT sensor array around the hardware Trojan" loading="lazy" decoding="async" /></a></figure>
             <div class="project-bar-head"><h3>HOTSPOT</h3><div class="project-venues"><a class="venue-tag venue-journal" href="/publications.html#hotspot-tcasi">TCAS-I 2026</a></div></div>
             <div class="project-bar-body">
-              <p class="project-summary">On-chip differential temperature sensing for detecting localized power anomalies from hardware Trojans on a measured 65-nm CMOS prototype.</p>
-              <ul class="bar-stats"><li><strong>95%</strong>peak Trojan detection accuracy</li><li><strong>6.65×</strong>higher SNR than supply-current sensing at 1.95 µW</li><li><strong>65 nm</strong>measured CMOS prototype</li></ul>
+              <p class="project-summary">Hardware-Trojan detection in a 65 nm ASIC that repurposes existing on-chip differential temperature sensors to catch localized power anomalies.</p>
+              <ul class="bar-stats"><li><strong>95%</strong>peak Trojan detection accuracy</li><li><strong>6.65×</strong>higher SNR than supply-current side-channel monitoring at 1.95 µW</li><li><strong>65 nm</strong>measured ASIC</li></ul>
               <p class="publication-links project-links"><a href="https://ieeexplore.ieee.org/document/11683251">Paper</a></p>
             </div>
           </li>

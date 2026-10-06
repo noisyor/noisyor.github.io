@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Saion K. Roy is a postdoctoral researcher at Northeastern University working on energy-efficient and secure machine learning accelerators, treating security as a design metric through algorithm-architecture-circuit co-design." />
+    <meta name="description" content="Saion K. Roy is a postdoctoral researcher at Northeastern University working on secure and energy-efficient machine-learning systems through algorithm-architecture-circuit co-design, treating security and privacy as first-class constraints alongside accuracy, energy, and reliability." />
     <meta property="og:title" content="Saion K. Roy" />
-    <meta property="og:description" content="Postdoctoral researcher at Northeastern University working on energy-efficient and secure machine learning accelerators through algorithm-architecture-circuit co-design." />
+    <meta property="og:description" content="Postdoctoral researcher at Northeastern University working on secure and energy-efficient machine-learning systems through algorithm-architecture-circuit co-design." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://noisyor.github.io/" />
     <meta property="og:image" content="https://noisyor.github.io/assets/og-minimal-v2.png" />
@@ -52,22 +52,22 @@
           </ul>
         </aside>
         <div class="home-main">
-          <p class="kicker">Integrated Circuits · Machine&nbsp;Learning · Hardware&nbsp;Security</p>
+          <p class="kicker">Integrated Circuits · Machine&nbsp;Learning&nbsp;Hardware · Hardware&nbsp;Security</p>
           <h2 id="about-title">About me</h2>
         <p>I am a postdoctoral researcher at Northeastern University, <a href="https://ece.northeastern.edu/">Department of Electrical and Computer Engineering</a>. Prior to this, I obtained my Ph.D. in <a href="https://ece.illinois.edu/">Electrical and Computer Engineering</a> from the University of Illinois at Urbana-Champaign (UIUC) in 2024, and my bachelor&rsquo;s and master&rsquo;s in <a href="https://www.iitkgp.ac.in/department/EC">Electronics and Electrical Communication Engineering</a> from IIT Kharagpur in 2018.</p>
-        <p>I am broadly interested in energy-efficient and secure machine learning accelerators. My work treats security as a design metric alongside energy efficiency and throughput, and quantifies the trade-offs among them through algorithm-architecture-circuit co-design. On the circuits side, this means analog in-memory computing macros built on embedded non-volatile memory, where circuit non-idealities, ADC precision, and array dimension determine the compute accuracy. On the security side, it means attacks and defenses on the hardware that runs machine learning, from cache side channels on heterogeneous SoCs to Rowhammer-based backdoors and on-chip Trojans. Some of my recent works address</p>
+        <p>I am broadly interested in secure and energy-efficient machine-learning systems built through algorithm-architecture-circuit co-design, with a focus on in-memory computing (IMC) and emerging accelerator architectures. This work studies how algorithm mapping, microarchitecture, and silicon implementation shape efficiency, robustness, and the hardware attack surface. Gains in energy efficiency, for example through IMCs, expose new vulnerabilities, and commercial platforms show the same pattern, where shared caches and DRAM enable side-channel and backdoor attacks. The goal is an end-to-end design methodology that treats security and privacy as first-class constraints alongside accuracy, energy, and reliability. Some of my recent works address</p>
         <h3 class="intro-group"><a href="/research.html#area-envm-imc">Energy-efficient eNVM in-memory computing accelerator design</a></h3>
         <ol class="intro-list">
-          <li>benchmarking that places in-memory computing designs on a common footing (<a href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a>, <a href="/publications.html#benchmarking-cicc">CICC 2022</a>).</li>
-          <li>the fundamental accuracy limits and energy-accuracy trade-offs of resistive crossbar and parallel-bar arrays (<a href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a>, <a href="/publications.html#crossbar-iscas">ISCAS 2022</a>).</li>
-          <li>a 22&nbsp;nm MRAM-based in-memory computing IC that boosts compute SNDR through statistical error compensation (<a href="/publications.html#compute-sndr-jssc">JSSC 2024</a>, <a href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a>).</li>
+          <li>a compositional benchmarking framework that compares over 100 IMC and digital chips using bit-normalized throughput, energy efficiency, and compute density (<a href="/publications.html#benchmarking-ojsscs">OJ-SSCS 2022</a>, <a href="/publications.html#benchmarking-cicc">CICC 2022</a>).</li>
+          <li>statistical signal-and-noise models of resistive crossbar and parallel-bar IMCs for MRAM, ReRAM, and FeFET, which set their compute-SNDR limits and energy-accuracy trade-offs (<a href="/publications.html#parallel-bar-jxcdc">JxCDC 2024</a>, <a href="/publications.html#crossbar-iscas">ISCAS 2022</a>).</li>
+          <li>an accuracy-boosted 22&nbsp;nm MRAM IMC macro that raises compute SNDR through offset-compensating current sensing and statistical error compensation (<a href="/publications.html#compute-sndr-jssc">JSSC 2024</a>, <a href="/publications.html#compute-snr-esscirc">ESSCIRC 2023</a>).</li>
         </ol>
         <h3 class="intro-group"><a href="/research.html#area-ml-security">Security vulnerabilities of ML accelerators</a></h3>
         <ol class="intro-list">
-          <li>inference-time backdoor injection through Rowhammer bit flips in deployed models (<a href="/publications.html#robbin">ICCAD 2026</a>).</li>
-          <li>access-driven side-channel attacks across the CPU and GPU of heterogeneous SoCs, and unsupervised transfer of side-channel analysis across devices and modalities (<a href="/publications.html#slac">CCS 2026</a>, <a href="/publications.html#attack-from-shadows">AsiaCCS 2026</a>).</li>
-          <li>the energy-accuracy-security trade-off in embedded non-volatile in-memory computing, including model extraction attacks on MRAM-based macros (<a href="/publications.html#eas-tcad">TCAD 2026</a>, <a href="/publications.html#eas-iedm">IEDM 2024</a>, <a href="/publications.html#model-extraction-iccad">ICCAD 2024</a>).</li>
-          <li>on-chip Trojan detection through temperature sensing (<a href="/publications.html#hotspot-tcasi">TCAS-I 2026</a>).</li>
+          <li>Rowhammer-based backdoor injection during DNN inference through DRAM bit flips, and vulnerability-aware DRAM page allocation that keeps model weights off Rowhammer-prone pages (<a href="/publications.html#robbin">ICCAD 2026</a>).</li>
+          <li>side-channel attacks on consumer hardware, from a CPU-to-GPU Prime+Probe channel through the Apple M1 system-level cache to unsupervised transfer-learning attacks across devices and modalities (<a href="/publications.html#slac">CCS 2026</a>, <a href="/publications.html#attack-from-shadows">AsiaCCS 2026</a>).</li>
+          <li>the energy-accuracy-security trade-offs in resistive IMCs, where analog noise lowers compute SNDR but does not protect stored weights from model extraction attacks (<a href="/publications.html#eas-tcad">TCAD 2026</a>, <a href="/publications.html#eas-iedm">IEDM 2024</a>, <a href="/publications.html#model-extraction-iccad">ICCAD 2024</a>).</li>
+          <li>hardware-Trojan detection that repurposes existing on-chip differential temperature sensors in a 65&nbsp;nm ASIC (<a href="/publications.html#hotspot-tcasi">TCAS-I 2026</a>).</li>
         </ol>
         <section class="home-news" aria-labelledby="home-news-title">
           <h2 id="home-news-title">News</h2>
