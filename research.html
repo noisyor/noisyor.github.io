@@ -16,7 +16,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header"><div class="container header-inner"><a class="site-name" href="/">Saion K. Roy</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button><nav id="site-nav" class="site-tabs" aria-label="Primary navigation"><a href="/">Home</a><a href="/research.html" aria-current="page">Research</a><a href="/publications.html">Publications</a><a href="/news.html">News</a><a href="/advising/">Advising</a><a href="/contact/">Contact</a></nav></div></header>
     <main id="main" class="container content-page research-page">
-      <header class="page-heading research-intro"><h1>Research and projects</h1><p>This research connects machine-learning security with integrated-circuit and system design across algorithms, computer architecture, and hardware implementation. Improving the energy efficiency of ML accelerators, for example through in-memory computing (IMC), exposes new attack surfaces. Commercial platforms show the same pattern, where shared resources such as caches and DRAM enable new side-channel and backdoor attacks. As these vulnerabilities cut across the stack, finding and fixing them calls for algorithm-architecture-circuit co-design, toward secure and efficient ML hardware.</p></header>
+      <header class="page-heading research-intro"><h1>Research and projects</h1><p>Machine-learning security and integrated-circuit design go hand in hand, from algorithms and computer architecture down to the hardware implementation. Making ML accelerators more energy efficient, for example through in-memory computing (IMC), exposes new attack surfaces. Commercial platforms show the same pattern, where shared resources such as caches and DRAM enable new side-channel and backdoor attacks. Because these vulnerabilities cut across the stack, finding and fixing them calls for algorithm-architecture-circuit co-design, toward secure and efficient ML hardware.</p></header>
 
       <nav class="area-overview" aria-label="Research areas">
         <a class="area-card" href="#area-envm-imc"><strong>Energy-efficient eNVM in-memory computing accelerator design</strong><span class="area-projects">IMC benchmarking, Crossbar IMC analysis, Parallel-bar IMC analysis, SEC–MRAM IMC</span></a>
@@ -24,7 +24,7 @@
       </nav>
 
       <section class="research-area" id="area-envm-imc" aria-labelledby="area-envm-imc-title">
-        <header class="area-heading"><h2 id="area-envm-imc-title">Energy-efficient eNVM in-memory computing accelerator design</h2><p>This work benchmarks, models, and builds resistive IMC architectures on embedded non-volatile memory (MRAM, ReRAM, and FeFET). It quantifies how device non-idealities, wire parasitics, sensing mismatch, and ADC precision set the compute SNDR, and how that SNDR trades off against energy, network accuracy, and security.</p></header>
+        <header class="area-heading"><h2 id="area-envm-imc-title">Energy-efficient eNVM in-memory computing accelerator design</h2><p>Resistive IMC on embedded non-volatile memory (MRAM, ReRAM, and FeFET) promises large energy savings for machine learning, but analog compute comes with noise. Benchmarking these architectures, modeling their accuracy limits, and building them in silicon reveals how device non-idealities, wire parasitics, sensing mismatch, and ADC precision set the compute SNDR, and how that SNDR trades off against energy, network accuracy, and security.</p></header>
         <figure class="area-figure">
           <div class="area-figure-scroll">
             <svg class="area-diagram area-diagram--desktop" viewBox="0 0 1040 456" role="group" aria-labelledby="a1-title">
@@ -112,7 +112,7 @@
       </section>
 
       <section class="research-area" id="area-ml-security" aria-labelledby="area-ml-security-title">
-        <header class="area-heading"><h2 id="area-ml-security-title">Security vulnerabilities of ML accelerators</h2><p>This work studies integrity and confidentiality attacks on the hardware that runs machine learning, and defenses against them. It covers side-channel attacks on consumer hardware, Rowhammer-based backdoor attacks on ML accelerators, model extraction from IMCs, and hardware-Trojan detection through on-chip temperature sensing.</p></header>
+        <header class="area-heading"><h2 id="area-ml-security-title">Security vulnerabilities of ML accelerators</h2><p>The hardware that runs machine learning can leak what a model computes, or let an attacker change what it does. These confidentiality and integrity attacks, and the defenses against them, range from side channels on consumer hardware and Rowhammer-based backdoors in ML accelerators to model extraction from IMCs and hardware-Trojan detection through on-chip temperature sensing.</p></header>
         <figure class="area-figure">
           <div class="area-figure-scroll">
             <svg class="area-diagram area-diagram--desktop" viewBox="0 0 1040 482" role="group" aria-labelledby="a2-title">
