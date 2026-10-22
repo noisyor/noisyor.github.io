@@ -15,7 +15,7 @@ Postdoctoral Researcher, Northeastern University
 
 ## About Me
 
-I am a postdoctoral researcher at Northeastern University, [Department of Electrical and Computer Engineering](https://ece.northeastern.edu/). Prior to this, I obtained my Ph.D. in [Electrical and Computer Engineering](https://ece.illinois.edu/) from the University of Illinois at Urbana-Champaign (UIUC) in 2024, and my bachelor's and master's in [Electronics and Electrical Communication Engineering](https://www.iitkgp.ac.in/department/EC) from IIT Kharagpur in 2018.
+I am a postdoctoral researcher at Northeastern University, [Department of Electrical and Computer Engineering](https://ece.northeastern.edu/). Prior to this, I obtained my Ph.D. in [Electrical and Computer Engineering](https://ece.illinois.edu/) from the University of Illinois Urbana-Champaign (UIUC) in 2024, and my bachelor's and master's in [Electronics and Electrical Communication Engineering](https://www.iitkgp.ac.in/department/EC) from IIT Kharagpur in 2018.
 
 I am broadly interested in secure and energy-efficient machine-learning systems built through algorithm-architecture-circuit co-design, with a focus on in-memory computing (IMC) and emerging accelerator architectures. This work studies how algorithm mapping, microarchitecture, and silicon implementation shape efficiency, robustness, and the hardware attack surface. Gains in energy efficiency, for example through IMCs, expose new vulnerabilities, and commercial platforms show the same pattern, where shared caches and DRAM enable side-channel and backdoor attacks. The goal is an end-to-end design methodology that treats security and privacy as first-class constraints alongside accuracy, energy, and reliability. Some of my recent works address
 
