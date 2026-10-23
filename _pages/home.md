@@ -29,8 +29,8 @@ My research builds on this connection through energy-efficient IMC design and in
 
 **Security vulnerabilities of ML accelerators**
 
-1. Rowhammer-based backdoor injection during DNN inference through DRAM bit flips, and vulnerability-aware DRAM page allocation that keeps model weights off Rowhammer-prone pages (ICCAD 2026).
-2. side-channel attacks on consumer hardware, from a CPU-to-GPU Prime+Probe channel through the Apple M1 system-level cache to unsupervised transfer-learning attacks across devices and modalities (CCS 2026, AsiaCCS 2026).
+1. DNN backdoor attacks using Rowhammer-induced DRAM bit flips, and a defense that places model weights away from vulnerable memory pages (ICCAD 2026).
+2. Side-channel attacks through the Apple M1’s shared CPU–GPU cache ([CCS 2026](/publications.html#slac)), and unsupervised transfer learning for cryptographic key recovery across devices and measurement types ([AsiaCCS 2026](/publications.html#attack-from-shadows)).
 3. the energy-accuracy-security trade-offs in resistive IMCs, where analog noise lowers compute SNDR but does not protect stored weights from model extraction attacks (TCAD 2026, IEDM 2024, ICCAD 2024).
 4. hardware-Trojan detection that repurposes existing on-chip differential temperature sensors in a 65 nm ASIC (TCAS-I 2026).
 
