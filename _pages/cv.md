@@ -5,6 +5,6 @@ layout: single
 author_profile: false
 ---
 
-You can download my full CV [here](../assets/Saion_Postdoc_CV-2026.pdf).
+You can download my full CV [here](/assets/Saion_K_Roy_CV.pdf).
 
-_Last updated: August 2026_
+_Last updated: October 2026_
