@@ -11,7 +11,7 @@ page_navigation: false
 Postdoctoral Researcher, Northeastern University
 📍 Boston, MA | ✉️ sai.roy@northeastern.edu
 
-[CV (PDF)](/assets/Saion_K_Roy_CV.pdf) · [DBLP](https://dblp.org/pid/320/8027.html)
+[CV (PDF)](/assets/Saion_K_Roy_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?user=80pyo_4AAAAJ&hl=en) · [DBLP](https://dblp.org/pid/320/8027.html)
 
 ---
 
