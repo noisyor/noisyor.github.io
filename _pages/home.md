@@ -17,7 +17,7 @@ Postdoctoral Researcher, Northeastern University
 
 ## About Me
 
-I am a postdoctoral researcher at Northeastern University, [Department of Electrical and Computer Engineering](https://ece.northeastern.edu/). Prior to this, I obtained my Ph.D. in [Electrical and Computer Engineering](https://ece.illinois.edu/) from the University of Illinois Urbana-Champaign (UIUC) in 2024, and my bachelor's and master's in [Electronics and Electrical Communication Engineering](https://www.iitkgp.ac.in/department/EC) from IIT Kharagpur in 2018.
+I obtained my Ph.D. in [Electrical and Computer Engineering](https://ece.illinois.edu/) from the University of Illinois Urbana-Champaign (UIUC) in 2024, advised by Prof. [Naresh R. Shanbhag](https://shanbhag.ece.illinois.edu/). I am currently a postdoctoral researcher in the [Department of Electrical and Computer Engineering](https://ece.northeastern.edu/) at Northeastern University, working with Prof. [Yunsi Fei](https://coe.northeastern.edu/people/fei-yunsi/). I received my bachelor's and master's in [Electronics and Electrical Communication Engineering](https://www.iitkgp.ac.in/department/EC) from IIT Kharagpur in 2018.
 
 Meeting AI’s growing computational demands requires accelerators that deliver high throughput with high energy efficiency. In-memory computing (IMC), a full-stack computing approach, addresses this challenge by performing computation directly in memory, reducing the energy cost of data movement. Realizing these gains requires algorithm-architecture-circuit co-design that accounts for how device and circuit properties affect inference accuracy. These same properties also influence model confidentiality and inference integrity, connecting accelerator design with hardware security.
 
